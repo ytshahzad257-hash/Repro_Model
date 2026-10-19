@@ -1,0 +1,2599 @@
+{
+  "changed_keys": 224,
+  "changes": [
+    {
+      "key": "/bounds",
+      "new": [
+        {
+          "admission_bits": 1,
+          "admission_classes_max": 2,
+          "enforcement_order_bits": 1,
+          "enforcement_order_classes_max": 2,
+          "family_bits": 3,
+          "family_classes_max": 8,
+          "final_state_bits": 2,
+          "final_state_classes_max": 3,
+          "full_ex_post_bits": 6,
+          "full_ex_post_classes_max": 45,
+          "max_fiber_histories": 45,
+          "operational_view_fibers": 8,
+          "pre_cut_histories": 125,
+          "sources": 1
+        },
+        {
+          "admission_bits": 2,
+          "admission_classes_max": 4,
+          "enforcement_order_bits": 1,
+          "enforcement_order_classes_max": 2,
+          "family_bits": 5,
+          "family_classes_max": 28,
+          "final_state_bits": 3,
+          "final_state_classes_max": 7,
+          "full_ex_post_bits": 12,
+          "full_ex_post_classes_max": 2655,
+          "max_fiber_histories": 2655,
+          "operational_view_fibers": 43,
+          "pre_cut_histories": 23120,
+          "sources": 2
+        },
+        {
+          "admission_bits": 3,
+          "admission_classes_max": 8,
+          "enforcement_order_bits": 1,
+          "enforcement_order_classes_max": 2,
+          "family_bits": 7,
+          "family_classes_max": 92,
+          "final_state_bits": 4,
+          "final_state_classes_max": 15,
+          "full_ex_post_bits": 19,
+          "full_ex_post_classes_max": 296112,
+          "max_fiber_histories": 296112,
+          "operational_view_fibers": 244,
+          "pre_cut_histories": 8878433,
+          "sources": 3
+        },
+        {
+          "admission_bits": 4,
+          "admission_classes_max": 16,
+          "enforcement_order_bits": 1,
+          "enforcement_order_classes_max": 2,
+          "family_bits": 9,
+          "family_classes_max": 292,
+          "final_state_bits": 5,
+          "final_state_classes_max": 31,
+          "full_ex_post_bits": 26,
+          "full_ex_post_classes_max": 45026436,
+          "max_fiber_histories": 45026436,
+          "operational_view_fibers": 1565,
+          "pre_cut_histories": 6187919126,
+          "sources": 4
+        }
+      ],
+      "old": [
+        {
+          "admission_bits": 1,
+          "admission_classes_max": 2,
+          "enforcement_order_bits": 1,
+          "enforcement_order_classes_max": 2,
+          "family_bits": 3,
+          "family_classes_max": 8,
+          "final_state_bits": 2,
+          "final_state_classes_max": 3,
+          "full_ex_post_bits": 6,
+          "full_ex_post_classes_max": 45,
+          "max_fiber_histories": 45,
+          "operational_view_fibers": 8,
+          "pre_cut_histories": 125,
+          "sources": 1
+        },
+        {
+          "admission_bits": 2,
+          "admission_classes_max": 4,
+          "enforcement_order_bits": 1,
+          "enforcement_order_classes_max": 2,
+          "family_bits": 5,
+          "family_classes_max": 28,
+          "final_state_bits": 3,
+          "final_state_classes_max": 7,
+          "full_ex_post_bits": 12,
+          "full_ex_post_classes_max": 2655,
+          "max_fiber_histories": 2655,
+          "operational_view_fibers": 43,
+          "pre_cut_histories": 23120,
+          "sources": 2
+        },
+        {
+          "admission_bits": 3,
+          "admission_classes_max": 8,
+          "enforcement_order_bits": 1,
+          "enforcement_order_classes_max": 2,
+          "family_bits": 7,
+          "family_classes_max": 92,
+          "final_state_bits": 4,
+          "final_state_classes_max": 15,
+          "full_ex_post_bits": 19,
+          "full_ex_post_classes_max": 296112,
+          "max_fiber_histories": 296112,
+          "operational_view_fibers": 244,
+          "pre_cut_histories": 8878433,
+          "sources": 3
+        }
+      ],
+      "reason": "Exact bounds extended through K=4; cache is explicit in pre-cut final states."
+    },
+    {
+      "key": "/model/ApprovedSecretRelease/K1",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 878,
+        "equal_release_product_transitions": 2164,
+        "information_safety": "holds",
+        "payload_only": "differ",
+        "product_states": 439,
+        "product_transitions": 1082,
+        "review_failures": 0,
+        "state_count_s0": 439,
+        "state_count_s1": 439,
+        "synchronous_observations": "differ",
+        "transitions_s0": 1082,
+        "transitions_s1": 1082,
+        "witness_length": 9
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/ApprovedSecretRelease/K1/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 878,
+        "equal_release_product_transitions": 2164,
+        "information_safety": "holds",
+        "payload_only": "differ",
+        "product_states": 439,
+        "product_transitions": 1082,
+        "review_failures": 0,
+        "state_count_s0": 439,
+        "state_count_s1": 439,
+        "synchronous_observations": "differ",
+        "transitions_s0": 1082,
+        "transitions_s1": 1082,
+        "witness_length": 9
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/ApprovedSecretRelease/K1/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 878,
+        "equal_release_product_transitions": 2164,
+        "information_safety": "holds",
+        "payload_only": "differ",
+        "product_states": 439,
+        "product_transitions": 1082,
+        "review_failures": 0,
+        "state_count_s0": 439,
+        "state_count_s1": 439,
+        "synchronous_observations": "differ",
+        "transitions_s0": 1082,
+        "transitions_s1": 1082,
+        "witness_length": 9
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/ApprovedSecretRelease/K2",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 3394,
+        "equal_release_product_transitions": 8500,
+        "information_safety": "holds",
+        "payload_only": "differ",
+        "product_states": 1697,
+        "product_transitions": 4250,
+        "review_failures": 0,
+        "state_count_s0": 1697,
+        "state_count_s1": 1697,
+        "synchronous_observations": "differ",
+        "transitions_s0": 4250,
+        "transitions_s1": 4250,
+        "witness_length": 9
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/ApprovedSecretRelease/K2/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 3394,
+        "equal_release_product_transitions": 8500,
+        "information_safety": "holds",
+        "payload_only": "differ",
+        "product_states": 1697,
+        "product_transitions": 4250,
+        "review_failures": 0,
+        "state_count_s0": 1697,
+        "state_count_s1": 1697,
+        "synchronous_observations": "differ",
+        "transitions_s0": 4250,
+        "transitions_s1": 4250,
+        "witness_length": 9
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/ApprovedSecretRelease/K2/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 5376,
+        "equal_release_product_transitions": 16980,
+        "information_safety": "holds",
+        "payload_only": "differ",
+        "product_states": 2688,
+        "product_transitions": 8490,
+        "review_failures": 0,
+        "state_count_s0": 2688,
+        "state_count_s1": 2688,
+        "synchronous_observations": "differ",
+        "transitions_s0": 8490,
+        "transitions_s1": 8490,
+        "witness_length": 9
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/ApprovedSecretRelease/K3",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 11894,
+        "equal_release_product_transitions": 30572,
+        "information_safety": "holds",
+        "payload_only": "differ",
+        "product_states": 5947,
+        "product_transitions": 15286,
+        "review_failures": 0,
+        "state_count_s0": 5947,
+        "state_count_s1": 5947,
+        "synchronous_observations": "differ",
+        "transitions_s0": 15286,
+        "transitions_s1": 15286,
+        "witness_length": 9
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/ApprovedSecretRelease/K3/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 11894,
+        "equal_release_product_transitions": 30572,
+        "information_safety": "holds",
+        "payload_only": "differ",
+        "product_states": 5947,
+        "product_transitions": 15286,
+        "review_failures": 0,
+        "state_count_s0": 5947,
+        "state_count_s1": 5947,
+        "synchronous_observations": "differ",
+        "transitions_s0": 15286,
+        "transitions_s1": 15286,
+        "witness_length": 9
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/ApprovedSecretRelease/K3/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 28824,
+        "equal_release_product_transitions": 113190,
+        "information_safety": "holds",
+        "payload_only": "differ",
+        "product_states": 14412,
+        "product_transitions": 56595,
+        "review_failures": 0,
+        "state_count_s0": 14412,
+        "state_count_s1": 14412,
+        "synchronous_observations": "differ",
+        "transitions_s0": 56595,
+        "transitions_s1": 56595,
+        "witness_length": 9
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/ApprovedSecretRelease/K4",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 39874,
+        "equal_release_product_transitions": 106684,
+        "information_safety": "holds",
+        "payload_only": "differ",
+        "product_states": 19937,
+        "product_transitions": 53342,
+        "review_failures": 0,
+        "state_count_s0": 19937,
+        "state_count_s1": 19937,
+        "synchronous_observations": "differ",
+        "transitions_s0": 53342,
+        "transitions_s1": 53342,
+        "witness_length": 9
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/ApprovedSecretRelease/K5",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 131078,
+        "equal_release_product_transitions": 371564,
+        "information_safety": "holds",
+        "payload_only": "differ",
+        "product_states": 65539,
+        "product_transitions": 185782,
+        "review_failures": 0,
+        "state_count_s0": 65539,
+        "state_count_s1": 65539,
+        "synchronous_observations": "differ",
+        "transitions_s0": 185782,
+        "transitions_s1": 185782,
+        "witness_length": 9
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K1/equal_release_observations",
+      "new": "equal",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K1/equal_release_product_states",
+      "new": 299,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K1/equal_release_product_transitions",
+      "new": 652,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K1/transitions_s1",
+      "new": 652,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K1/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 299,
+        "equal_release_product_transitions": 652,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 299,
+        "product_transitions": 652,
+        "review_failures": 520,
+        "state_count_s0": 299,
+        "state_count_s1": 299,
+        "synchronous_observations": "equal",
+        "transitions_s0": 652,
+        "transitions_s1": 652,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K1/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 299,
+        "equal_release_product_transitions": 652,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 299,
+        "product_transitions": 652,
+        "review_failures": 520,
+        "state_count_s0": 299,
+        "state_count_s1": 299,
+        "synchronous_observations": "equal",
+        "transitions_s0": 652,
+        "transitions_s1": 652,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K2/equal_release_observations",
+      "new": "equal",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K2/equal_release_product_states",
+      "new": 1165,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K2/equal_release_product_transitions",
+      "new": 2616,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K2/transitions_s1",
+      "new": 2616,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K2/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 1165,
+        "equal_release_product_transitions": 2616,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 1165,
+        "product_transitions": 2616,
+        "review_failures": 1976,
+        "state_count_s0": 1165,
+        "state_count_s1": 1165,
+        "synchronous_observations": "equal",
+        "transitions_s0": 2616,
+        "transitions_s1": 2616,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K2/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 1836,
+        "equal_release_product_transitions": 5304,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 1836,
+        "product_transitions": 5304,
+        "review_failures": 3288,
+        "state_count_s0": 1836,
+        "state_count_s1": 1836,
+        "synchronous_observations": "equal",
+        "transitions_s0": 5304,
+        "transitions_s1": 5304,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K3/equal_release_observations",
+      "new": "equal",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K3/equal_release_product_states",
+      "new": 4127,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K3/equal_release_product_transitions",
+      "new": 9696,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K3/transitions_s1",
+      "new": 9696,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K3/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 4127,
+        "equal_release_product_transitions": 9696,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 4127,
+        "product_transitions": 9696,
+        "review_failures": 6760,
+        "state_count_s0": 4127,
+        "state_count_s1": 4127,
+        "synchronous_observations": "equal",
+        "transitions_s0": 9696,
+        "transitions_s1": 9696,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K3/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 9840,
+        "equal_release_product_transitions": 36057,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 9840,
+        "product_transitions": 36057,
+        "review_failures": 17928,
+        "state_count_s0": 9840,
+        "state_count_s1": 9840,
+        "synchronous_observations": "equal",
+        "transitions_s0": 36057,
+        "transitions_s1": 36057,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K4/equal_release_observations",
+      "new": "equal",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K4/equal_release_product_states",
+      "new": 14029,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K4/equal_release_product_transitions",
+      "new": 35196,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K4/transitions_s1",
+      "new": 35196,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/DeleteEvidence/K5",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 46919,
+        "equal_release_product_transitions": 128592,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 46919,
+        "product_transitions": 128592,
+        "review_failures": 69160,
+        "state_count_s0": 46919,
+        "state_count_s1": 46919,
+        "synchronous_observations": "equal",
+        "transitions_s0": 128592,
+        "transitions_s1": 128592,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K1/equal_release_observations",
+      "new": "equal",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K1/equal_release_product_states",
+      "new": 439,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K1/equal_release_product_transitions",
+      "new": 1082,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K1/transitions_s1",
+      "new": 1082,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K1/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 439,
+        "equal_release_product_transitions": 1082,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 439,
+        "product_transitions": 1082,
+        "review_failures": 0,
+        "state_count_s0": 439,
+        "state_count_s1": 439,
+        "synchronous_observations": "equal",
+        "transitions_s0": 1082,
+        "transitions_s1": 1082,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K1/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 439,
+        "equal_release_product_transitions": 1082,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 439,
+        "product_transitions": 1082,
+        "review_failures": 0,
+        "state_count_s0": 439,
+        "state_count_s1": 439,
+        "synchronous_observations": "equal",
+        "transitions_s0": 1082,
+        "transitions_s1": 1082,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K2/equal_release_observations",
+      "new": "equal",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K2/equal_release_product_states",
+      "new": 1697,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K2/equal_release_product_transitions",
+      "new": 4250,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K2/transitions_s1",
+      "new": 4250,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K2/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 1697,
+        "equal_release_product_transitions": 4250,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 1697,
+        "product_transitions": 4250,
+        "review_failures": 0,
+        "state_count_s0": 1697,
+        "state_count_s1": 1697,
+        "synchronous_observations": "equal",
+        "transitions_s0": 4250,
+        "transitions_s1": 4250,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K2/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 2688,
+        "equal_release_product_transitions": 8490,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 2688,
+        "product_transitions": 8490,
+        "review_failures": 0,
+        "state_count_s0": 2688,
+        "state_count_s1": 2688,
+        "synchronous_observations": "equal",
+        "transitions_s0": 8490,
+        "transitions_s1": 8490,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K3/equal_release_observations",
+      "new": "equal",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K3/equal_release_product_states",
+      "new": 5947,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K3/equal_release_product_transitions",
+      "new": 15286,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K3/transitions_s1",
+      "new": 15286,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K3/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 5947,
+        "equal_release_product_transitions": 15286,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 5947,
+        "product_transitions": 15286,
+        "review_failures": 0,
+        "state_count_s0": 5947,
+        "state_count_s1": 5947,
+        "synchronous_observations": "equal",
+        "transitions_s0": 15286,
+        "transitions_s1": 15286,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K3/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 14412,
+        "equal_release_product_transitions": 56595,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 14412,
+        "product_transitions": 56595,
+        "review_failures": 0,
+        "state_count_s0": 14412,
+        "state_count_s1": 14412,
+        "synchronous_observations": "equal",
+        "transitions_s0": 56595,
+        "transitions_s1": 56595,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K4/equal_release_observations",
+      "new": "equal",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K4/equal_release_product_states",
+      "new": 19937,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K4/equal_release_product_transitions",
+      "new": 53342,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K4/transitions_s1",
+      "new": 53342,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/Governed/K5",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 65539,
+        "equal_release_product_transitions": 185782,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 65539,
+        "product_transitions": 185782,
+        "review_failures": 0,
+        "state_count_s0": 65539,
+        "state_count_s1": 65539,
+        "synchronous_observations": "equal",
+        "transitions_s0": 185782,
+        "transitions_s1": 185782,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K1/equal_release_observations",
+      "new": "equal",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K1/equal_release_product_states",
+      "new": 519,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K1/equal_release_product_transitions",
+      "new": 1292,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K1/transitions_s1",
+      "new": 1292,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K1/independent/all",
+      "new": {
+        "authorization_safety": "violated",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 519,
+        "equal_release_product_transitions": 1292,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 519,
+        "product_transitions": 1292,
+        "review_failures": 0,
+        "state_count_s0": 519,
+        "state_count_s1": 519,
+        "synchronous_observations": "equal",
+        "transitions_s0": 1292,
+        "transitions_s1": 1292,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K1/independent/one",
+      "new": {
+        "authorization_safety": "violated",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 519,
+        "equal_release_product_transitions": 1292,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 519,
+        "product_transitions": 1292,
+        "review_failures": 0,
+        "state_count_s0": 519,
+        "state_count_s1": 519,
+        "synchronous_observations": "equal",
+        "transitions_s0": 1292,
+        "transitions_s1": 1292,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K2/equal_release_observations",
+      "new": "equal",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K2/equal_release_product_states",
+      "new": 2001,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K2/equal_release_product_transitions",
+      "new": 5048,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K2/transitions_s1",
+      "new": 5048,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K2/independent/all",
+      "new": {
+        "authorization_safety": "violated",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 2001,
+        "equal_release_product_transitions": 5048,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 2001,
+        "product_transitions": 5048,
+        "review_failures": 0,
+        "state_count_s0": 2001,
+        "state_count_s1": 2001,
+        "synchronous_observations": "equal",
+        "transitions_s0": 5048,
+        "transitions_s1": 5048,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K2/independent/one",
+      "new": {
+        "authorization_safety": "violated",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 3252,
+        "equal_release_product_transitions": 10386,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 3252,
+        "product_transitions": 10386,
+        "review_failures": 0,
+        "state_count_s0": 3252,
+        "state_count_s1": 3252,
+        "synchronous_observations": "equal",
+        "transitions_s0": 10386,
+        "transitions_s1": 10386,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K3/equal_release_observations",
+      "new": "equal",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K3/equal_release_product_states",
+      "new": 6987,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K3/equal_release_product_transitions",
+      "new": 18016,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K3/transitions_s1",
+      "new": 18016,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K3/independent/all",
+      "new": {
+        "authorization_safety": "violated",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 6987,
+        "equal_release_product_transitions": 18016,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 6987,
+        "product_transitions": 18016,
+        "review_failures": 0,
+        "state_count_s0": 6987,
+        "state_count_s1": 6987,
+        "synchronous_observations": "equal",
+        "transitions_s0": 18016,
+        "transitions_s1": 18016,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K3/independent/one",
+      "new": {
+        "authorization_safety": "violated",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 17616,
+        "equal_release_product_transitions": 69915,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 17616,
+        "product_transitions": 69915,
+        "review_failures": 0,
+        "state_count_s0": 17616,
+        "state_count_s1": 17616,
+        "synchronous_observations": "equal",
+        "transitions_s0": 69915,
+        "transitions_s1": 69915,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K4/equal_release_observations",
+      "new": "equal",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K4/equal_release_product_states",
+      "new": 23313,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K4/equal_release_product_transitions",
+      "new": 62204,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K4/transitions_s1",
+      "new": 62204,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreGrantChecks/K5",
+      "new": {
+        "authorization_safety": "violated",
+        "equal_release_observations": "equal",
+        "equal_release_product_states": 76179,
+        "equal_release_product_transitions": 213712,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 76179,
+        "product_transitions": 213712,
+        "review_failures": 0,
+        "state_count_s0": 76179,
+        "state_count_s1": 76179,
+        "synchronous_observations": "equal",
+        "transitions_s0": 213712,
+        "transitions_s1": 213712,
+        "witness_length": null
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K1/equal_release_observations",
+      "new": "differ",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K1/equal_release_product_states",
+      "new": 1000,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K1/equal_release_product_transitions",
+      "new": 3034,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K1/product_states",
+      "new": 1000,
+      "old": 904,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K1/product_transitions",
+      "new": 3034,
+      "old": 2722,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K1/state_count_s0",
+      "new": 1000,
+      "old": 904,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K1/state_count_s1",
+      "new": 1000,
+      "old": 904,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K1/transitions_s0",
+      "new": 3034,
+      "old": 2722,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K1/transitions_s1",
+      "new": 3034,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K1/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 1000,
+        "equal_release_product_transitions": 3034,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 1000,
+        "product_transitions": 3034,
+        "review_failures": 0,
+        "state_count_s0": 1000,
+        "state_count_s1": 1000,
+        "synchronous_observations": "differ",
+        "transitions_s0": 3034,
+        "transitions_s1": 3034,
+        "witness_length": 10
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K1/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 1000,
+        "equal_release_product_transitions": 3034,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 1000,
+        "product_transitions": 3034,
+        "review_failures": 0,
+        "state_count_s0": 1000,
+        "state_count_s1": 1000,
+        "synchronous_observations": "differ",
+        "transitions_s0": 3034,
+        "transitions_s1": 3034,
+        "witness_length": 10
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K2/equal_release_observations",
+      "new": "differ",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K2/equal_release_product_states",
+      "new": 5960,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K2/equal_release_product_transitions",
+      "new": 22763,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K2/product_states",
+      "new": 5960,
+      "old": 4808,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K2/product_transitions",
+      "new": 22763,
+      "old": 18275,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K2/state_count_s0",
+      "new": 5960,
+      "old": 4808,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K2/state_count_s1",
+      "new": 5960,
+      "old": 4808,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K2/transitions_s0",
+      "new": 22763,
+      "old": 18275,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K2/transitions_s1",
+      "new": 22763,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K2/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 5960,
+        "equal_release_product_transitions": 22763,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 5960,
+        "product_transitions": 22763,
+        "review_failures": 0,
+        "state_count_s0": 5960,
+        "state_count_s1": 5960,
+        "synchronous_observations": "differ",
+        "transitions_s0": 22763,
+        "transitions_s1": 22763,
+        "witness_length": 10
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K2/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 5460,
+        "equal_release_product_transitions": 20789,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 5460,
+        "product_transitions": 20789,
+        "review_failures": 0,
+        "state_count_s0": 5460,
+        "state_count_s1": 5460,
+        "synchronous_observations": "differ",
+        "transitions_s0": 20789,
+        "transitions_s1": 20789,
+        "witness_length": 10
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K3/equal_release_observations",
+      "new": "differ",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K3/equal_release_product_states",
+      "new": 30736,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K3/equal_release_product_transitions",
+      "new": 141837,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K3/product_states",
+      "new": 30736,
+      "old": 21856,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K3/product_transitions",
+      "new": 141837,
+      "old": 100509,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K3/state_count_s0",
+      "new": 30736,
+      "old": 21856,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K3/state_count_s1",
+      "new": 30736,
+      "old": 21856,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K3/transitions_s0",
+      "new": 141837,
+      "old": 100509,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K3/transitions_s1",
+      "new": 141837,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K3/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 30736,
+        "equal_release_product_transitions": 141837,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 30736,
+        "product_transitions": 141837,
+        "review_failures": 0,
+        "state_count_s0": 30736,
+        "state_count_s1": 30736,
+        "synchronous_observations": "differ",
+        "transitions_s0": 141837,
+        "transitions_s1": 141837,
+        "witness_length": 10
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K3/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 27948,
+        "equal_release_product_transitions": 128579,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 27948,
+        "product_transitions": 128579,
+        "review_failures": 0,
+        "state_count_s0": 27948,
+        "state_count_s1": 27948,
+        "synchronous_observations": "differ",
+        "transitions_s0": 128579,
+        "transitions_s1": 128579,
+        "witness_length": 10
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K4/equal_release_observations",
+      "new": "differ",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K4/equal_release_product_states",
+      "new": 150704,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K4/equal_release_product_transitions",
+      "new": 815031,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K4/product_states",
+      "new": 150704,
+      "old": 93392,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K4/product_transitions",
+      "new": 815031,
+      "old": 503295,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K4/state_count_s0",
+      "new": 150704,
+      "old": 93392,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K4/state_count_s1",
+      "new": 150704,
+      "old": 93392,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K4/transitions_s0",
+      "new": 815031,
+      "old": 503295,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K4/transitions_s1",
+      "new": 815031,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/IgnoreInfoChecks/K5",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 725440,
+        "equal_release_product_transitions": 4497149,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 725440,
+        "product_transitions": 4497149,
+        "review_failures": 0,
+        "state_count_s0": 725440,
+        "state_count_s1": 725440,
+        "synchronous_observations": "differ",
+        "transitions_s0": 4497149,
+        "transitions_s1": 4497149,
+        "witness_length": 10
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/RefusalMutation/K1",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 279,
+        "equal_release_product_transitions": 662,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 279,
+        "product_transitions": 662,
+        "review_failures": 0,
+        "state_count_s0": 439,
+        "state_count_s1": 279,
+        "synchronous_observations": "differ",
+        "transitions_s0": 1082,
+        "transitions_s1": 662,
+        "witness_length": 7
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/RefusalMutation/K1/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 279,
+        "equal_release_product_transitions": 662,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 279,
+        "product_transitions": 662,
+        "review_failures": 0,
+        "state_count_s0": 439,
+        "state_count_s1": 279,
+        "synchronous_observations": "differ",
+        "transitions_s0": 1082,
+        "transitions_s1": 662,
+        "witness_length": 7
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/RefusalMutation/K1/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 279,
+        "equal_release_product_transitions": 662,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 279,
+        "product_transitions": 662,
+        "review_failures": 0,
+        "state_count_s0": 439,
+        "state_count_s1": 279,
+        "synchronous_observations": "differ",
+        "transitions_s0": 1082,
+        "transitions_s1": 662,
+        "witness_length": 7
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/RefusalMutation/K2",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 1089,
+        "equal_release_product_transitions": 2654,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 1089,
+        "product_transitions": 2654,
+        "review_failures": 0,
+        "state_count_s0": 1697,
+        "state_count_s1": 1089,
+        "synchronous_observations": "differ",
+        "transitions_s0": 4250,
+        "transitions_s1": 2654,
+        "witness_length": 7
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/RefusalMutation/K2/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 1089,
+        "equal_release_product_transitions": 2654,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 1089,
+        "product_transitions": 2654,
+        "review_failures": 0,
+        "state_count_s0": 1697,
+        "state_count_s1": 1089,
+        "synchronous_observations": "differ",
+        "transitions_s0": 4250,
+        "transitions_s1": 2654,
+        "witness_length": 7
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/RefusalMutation/K2/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 1560,
+        "equal_release_product_transitions": 4698,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 1560,
+        "product_transitions": 4698,
+        "review_failures": 0,
+        "state_count_s0": 2688,
+        "state_count_s1": 1560,
+        "synchronous_observations": "differ",
+        "transitions_s0": 8490,
+        "transitions_s1": 4698,
+        "witness_length": 7
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/RefusalMutation/K3",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 3867,
+        "equal_release_product_transitions": 9826,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 3867,
+        "product_transitions": 9826,
+        "review_failures": 0,
+        "state_count_s0": 5947,
+        "state_count_s1": 3867,
+        "synchronous_observations": "differ",
+        "transitions_s0": 15286,
+        "transitions_s1": 9826,
+        "witness_length": 7
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/RefusalMutation/K3/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 3867,
+        "equal_release_product_transitions": 9826,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 3867,
+        "product_transitions": 9826,
+        "review_failures": 0,
+        "state_count_s0": 5947,
+        "state_count_s1": 3867,
+        "synchronous_observations": "differ",
+        "transitions_s0": 15286,
+        "transitions_s1": 9826,
+        "witness_length": 7
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/RefusalMutation/K3/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 8004,
+        "equal_release_product_transitions": 29955,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 8004,
+        "product_transitions": 29955,
+        "review_failures": 0,
+        "state_count_s0": 14412,
+        "state_count_s1": 8004,
+        "synchronous_observations": "differ",
+        "transitions_s0": 56595,
+        "transitions_s1": 29955,
+        "witness_length": 7
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/RefusalMutation/K4",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 13185,
+        "equal_release_product_transitions": 35618,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 13185,
+        "product_transitions": 35618,
+        "review_failures": 0,
+        "state_count_s0": 19937,
+        "state_count_s1": 13185,
+        "synchronous_observations": "differ",
+        "transitions_s0": 53342,
+        "transitions_s1": 35618,
+        "witness_length": 7
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/RefusalMutation/K5",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 44259,
+        "equal_release_product_transitions": 129922,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 44259,
+        "product_transitions": 129922,
+        "review_failures": 0,
+        "state_count_s0": 65539,
+        "state_count_s1": 44259,
+        "synchronous_observations": "differ",
+        "transitions_s0": 185782,
+        "transitions_s1": 129922,
+        "witness_length": 7
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K1/equal_release_observations",
+      "new": "differ",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K1/equal_release_product_states",
+      "new": 570,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K1/equal_release_product_transitions",
+      "new": 1470,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K1/product_states",
+      "new": 570,
+      "old": 594,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K1/product_transitions",
+      "new": 1470,
+      "old": 1506,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K1/state_count_s0",
+      "new": 570,
+      "old": 594,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K1/state_count_s1",
+      "new": 570,
+      "old": 594,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K1/transitions_s0",
+      "new": 1470,
+      "old": 1506,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K1/transitions_s1",
+      "new": 1470,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K1/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 570,
+        "equal_release_product_transitions": 1470,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 570,
+        "product_transitions": 1470,
+        "review_failures": 0,
+        "state_count_s0": 570,
+        "state_count_s1": 570,
+        "synchronous_observations": "differ",
+        "transitions_s0": 1470,
+        "transitions_s1": 1470,
+        "witness_length": 10
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K1/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 570,
+        "equal_release_product_transitions": 1470,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 570,
+        "product_transitions": 1470,
+        "review_failures": 0,
+        "state_count_s0": 570,
+        "state_count_s1": 570,
+        "synchronous_observations": "differ",
+        "transitions_s0": 1470,
+        "transitions_s1": 1470,
+        "witness_length": 10
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K2/equal_release_observations",
+      "new": "differ",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K2/equal_release_product_states",
+      "new": 2946,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K2/equal_release_product_transitions",
+      "new": 7796,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K2/product_states",
+      "new": 2946,
+      "old": 2778,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K2/product_transitions",
+      "new": 7796,
+      "old": 7328,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K2/state_count_s0",
+      "new": 2946,
+      "old": 2778,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K2/state_count_s1",
+      "new": 2946,
+      "old": 2778,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K2/transitions_s0",
+      "new": 7796,
+      "old": 7328,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K2/transitions_s1",
+      "new": 7796,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K2/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 2946,
+        "equal_release_product_transitions": 7796,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 2946,
+        "product_transitions": 7796,
+        "review_failures": 0,
+        "state_count_s0": 2946,
+        "state_count_s1": 2946,
+        "synchronous_observations": "differ",
+        "transitions_s0": 7796,
+        "transitions_s1": 7796,
+        "witness_length": 10
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K2/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 3522,
+        "equal_release_product_transitions": 11318,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 3522,
+        "product_transitions": 11318,
+        "review_failures": 0,
+        "state_count_s0": 3522,
+        "state_count_s1": 3522,
+        "synchronous_observations": "differ",
+        "transitions_s0": 11318,
+        "transitions_s1": 11318,
+        "witness_length": 10
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K3/equal_release_observations",
+      "new": "differ",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K3/equal_release_product_states",
+      "new": 13782,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K3/equal_release_product_transitions",
+      "new": 37112,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K3/product_states",
+      "new": 13782,
+      "old": 11646,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K3/product_transitions",
+      "new": 37112,
+      "old": 31964,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K3/state_count_s0",
+      "new": 13782,
+      "old": 11646,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K3/state_count_s1",
+      "new": 13782,
+      "old": 11646,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K3/transitions_s0",
+      "new": 37112,
+      "old": 31964,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K3/transitions_s1",
+      "new": 37112,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K3/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 13782,
+        "equal_release_product_transitions": 37112,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 13782,
+        "product_transitions": 37112,
+        "review_failures": 0,
+        "state_count_s0": 13782,
+        "state_count_s1": 13782,
+        "synchronous_observations": "differ",
+        "transitions_s0": 37112,
+        "transitions_s1": 37112,
+        "witness_length": 10
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K3/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 18966,
+        "equal_release_product_transitions": 75068,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 18966,
+        "product_transitions": 75068,
+        "review_failures": 0,
+        "state_count_s0": 18966,
+        "state_count_s1": 18966,
+        "synchronous_observations": "differ",
+        "transitions_s0": 75068,
+        "transitions_s1": 75068,
+        "witness_length": 10
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K4/equal_release_observations",
+      "new": "differ",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K4/equal_release_product_states",
+      "new": 61122,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K4/equal_release_product_transitions",
+      "new": 166892,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K4/product_states",
+      "new": 61122,
+      "old": 46842,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K4/product_transitions",
+      "new": 166892,
+      "old": 133592,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K4/state_count_s0",
+      "new": 61122,
+      "old": 46842,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K4/state_count_s1",
+      "new": 61122,
+      "old": 46842,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K4/transitions_s0",
+      "new": 166892,
+      "old": 133592,
+      "reason": "Separate persistent cache can survive public reconstruction and be reloaded in mutation cases; no guard was tuned to match expected counts."
+    },
+    {
+      "key": "/model/SourceOnly/K4/transitions_s1",
+      "new": 166892,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/SourceOnly/K5",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 262470,
+        "equal_release_product_transitions": 725360,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 262470,
+        "product_transitions": 725360,
+        "review_failures": 0,
+        "state_count_s0": 262470,
+        "state_count_s1": 262470,
+        "synchronous_observations": "differ",
+        "transitions_s0": 725360,
+        "transitions_s1": 725360,
+        "witness_length": 10
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K1/equal_release_observations",
+      "new": "differ",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K1/equal_release_product_states",
+      "new": 559,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K1/equal_release_product_transitions",
+      "new": 1442,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K1/transitions_s1",
+      "new": 1442,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K1/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 559,
+        "equal_release_product_transitions": 1442,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 559,
+        "product_transitions": 1442,
+        "review_failures": 0,
+        "state_count_s0": 439,
+        "state_count_s1": 559,
+        "synchronous_observations": "differ",
+        "transitions_s0": 1082,
+        "transitions_s1": 1442,
+        "witness_length": 8
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K1/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 559,
+        "equal_release_product_transitions": 1442,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 559,
+        "product_transitions": 1442,
+        "review_failures": 0,
+        "state_count_s0": 439,
+        "state_count_s1": 559,
+        "synchronous_observations": "differ",
+        "transitions_s0": 1082,
+        "transitions_s1": 1442,
+        "witness_length": 8
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K2/equal_release_observations",
+      "new": "differ",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K2/equal_release_product_states",
+      "new": 2153,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K2/equal_release_product_transitions",
+      "new": 5618,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K2/transitions_s1",
+      "new": 5618,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K2/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 2153,
+        "equal_release_product_transitions": 5618,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 2153,
+        "product_transitions": 5618,
+        "review_failures": 0,
+        "state_count_s0": 1697,
+        "state_count_s1": 2153,
+        "synchronous_observations": "differ",
+        "transitions_s0": 4250,
+        "transitions_s1": 5618,
+        "witness_length": 8
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K2/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 3480,
+        "equal_release_product_transitions": 11406,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 3480,
+        "product_transitions": 11406,
+        "review_failures": 0,
+        "state_count_s0": 2688,
+        "state_count_s1": 3480,
+        "synchronous_observations": "differ",
+        "transitions_s0": 8490,
+        "transitions_s1": 11406,
+        "witness_length": 8
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K3/equal_release_observations",
+      "new": "differ",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K3/equal_release_product_states",
+      "new": 7507,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K3/equal_release_product_transitions",
+      "new": 19966,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K3/transitions_s1",
+      "new": 19966,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K3/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 7507,
+        "equal_release_product_transitions": 19966,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 7507,
+        "product_transitions": 19966,
+        "review_failures": 0,
+        "state_count_s0": 5947,
+        "state_count_s1": 7507,
+        "synchronous_observations": "differ",
+        "transitions_s0": 15286,
+        "transitions_s1": 19966,
+        "witness_length": 8
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K3/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 18804,
+        "equal_release_product_transitions": 76143,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 18804,
+        "product_transitions": 76143,
+        "review_failures": 0,
+        "state_count_s0": 14412,
+        "state_count_s1": 18804,
+        "synchronous_observations": "differ",
+        "transitions_s0": 56595,
+        "transitions_s1": 76143,
+        "witness_length": 8
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K4/equal_release_observations",
+      "new": "differ",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K4/equal_release_product_states",
+      "new": 25001,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K4/equal_release_product_transitions",
+      "new": 68534,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K4/transitions_s1",
+      "new": 68534,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/TimedRelease/K5",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 81499,
+        "equal_release_product_transitions": 233662,
+        "information_safety": "holds",
+        "payload_only": "equal",
+        "product_states": 81499,
+        "product_transitions": 233662,
+        "review_failures": 0,
+        "state_count_s0": 65539,
+        "state_count_s1": 81499,
+        "synchronous_observations": "differ",
+        "transitions_s0": 185782,
+        "transitions_s1": 233662,
+        "witness_length": 8
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K1/equal_release_observations",
+      "new": "differ",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K1/equal_release_product_states",
+      "new": 379,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K1/equal_release_product_transitions",
+      "new": 822,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K1/transitions_s1",
+      "new": 822,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K1/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 379,
+        "equal_release_product_transitions": 822,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 379,
+        "product_transitions": 822,
+        "review_failures": 0,
+        "state_count_s0": 379,
+        "state_count_s1": 379,
+        "synchronous_observations": "differ",
+        "transitions_s0": 822,
+        "transitions_s1": 822,
+        "witness_length": 11
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K1/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 379,
+        "equal_release_product_transitions": 822,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 379,
+        "product_transitions": 822,
+        "review_failures": 0,
+        "state_count_s0": 379,
+        "state_count_s1": 379,
+        "synchronous_observations": "differ",
+        "transitions_s0": 822,
+        "transitions_s1": 822,
+        "witness_length": 11
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K2/equal_release_observations",
+      "new": "differ",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K2/equal_release_product_states",
+      "new": 1469,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K2/equal_release_product_transitions",
+      "new": 3262,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K2/transitions_s1",
+      "new": 3262,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K2/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 1469,
+        "equal_release_product_transitions": 3262,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 1469,
+        "product_transitions": 3262,
+        "review_failures": 0,
+        "state_count_s0": 1469,
+        "state_count_s1": 1469,
+        "synchronous_observations": "differ",
+        "transitions_s0": 3262,
+        "transitions_s1": 3262,
+        "witness_length": 11
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K2/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 2400,
+        "equal_release_product_transitions": 6864,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 2400,
+        "product_transitions": 6864,
+        "review_failures": 0,
+        "state_count_s0": 2400,
+        "state_count_s1": 2400,
+        "synchronous_observations": "differ",
+        "transitions_s0": 6864,
+        "transitions_s1": 6864,
+        "witness_length": 11
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K3/equal_release_observations",
+      "new": "differ",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K3/equal_release_product_states",
+      "new": 5167,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K3/equal_release_product_transitions",
+      "new": 11906,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K3/transitions_s1",
+      "new": 11906,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K3/independent/all",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 5167,
+        "equal_release_product_transitions": 11906,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 5167,
+        "product_transitions": 11906,
+        "review_failures": 0,
+        "state_count_s0": 5167,
+        "state_count_s1": 5167,
+        "synchronous_observations": "differ",
+        "transitions_s0": 11906,
+        "transitions_s1": 11906,
+        "witness_length": 11
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K3/independent/one",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 13044,
+        "equal_release_product_transitions": 47361,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 13044,
+        "product_transitions": 47361,
+        "review_failures": 0,
+        "state_count_s0": 13044,
+        "state_count_s1": 13044,
+        "synchronous_observations": "differ",
+        "transitions_s0": 47361,
+        "transitions_s1": 47361,
+        "witness_length": 11
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K4/equal_release_observations",
+      "new": "differ",
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K4/equal_release_product_states",
+      "new": 17405,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K4/equal_release_product_transitions",
+      "new": 42370,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K4/transitions_s1",
+      "new": 42370,
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    },
+    {
+      "key": "/model/UnguardedExport/K5",
+      "new": {
+        "authorization_safety": "holds",
+        "equal_release_observations": "differ",
+        "equal_release_product_states": 57559,
+        "equal_release_product_transitions": 151202,
+        "information_safety": "violated",
+        "payload_only": "differ",
+        "product_states": 57559,
+        "product_transitions": 151202,
+        "review_failures": 0,
+        "state_count_s0": 57559,
+        "state_count_s1": 57559,
+        "synchronous_observations": "differ",
+        "transitions_s0": 151202,
+        "transitions_s1": 151202,
+        "witness_length": 11
+      },
+      "old": null,
+      "reason": "New Revision 6 case/field, explicitly added for independent secrets, larger coverage or equal-release comparison."
+    }
+  ]
+}

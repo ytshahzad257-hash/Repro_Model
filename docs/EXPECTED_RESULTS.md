@@ -1,0 +1,4 @@
+# Expected results
+`results/expected/revision5.json` is the current structural regression snapshot. The filename is retained for continuity. It is not imported by the model. Original pre-reconstruction assertions remain under `results/historical_paper_assertions/`; `revision5_1_expected.json` preserves the successfully reproduced baseline.
+
+Run `python scripts/check_expected.py` after producing complete results. To approve a justified semantic extension, first obtain a complete matched Python/TLC matrix, then use `python scripts/check_expected.py --update` and `python scripts/expected_delta.py`. The updater refuses incomplete/unmatched coverage. Review every changed key against `docs/CHANGELOG_REVISION6.md` and `results/generated/expected_delta.json`; do not use an update to suppress an unexplained mismatch. The obsolete synchronize_submission.py entry point has been retired.

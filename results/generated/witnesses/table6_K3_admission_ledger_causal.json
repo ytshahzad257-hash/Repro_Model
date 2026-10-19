@@ -1,0 +1,31 @@
+{
+  "answer_left": "True",
+  "answer_right": "False",
+  "explored_product_nodes": 407392,
+  "question": "causal",
+  "recorder": "admission_ledger",
+  "sources": 3,
+  "verdict": "insufficient",
+  "witness_left": [
+    "Read[0]",
+    "Derive[0]",
+    "Load[0]/use",
+    "RequestRevoke",
+    "UpdatePolicy",
+    "Isolate",
+    "Fence",
+    "Persist",
+    "CommitCut"
+  ],
+  "witness_right": [
+    "Read[0]",
+    "Derive[0]",
+    "RequestRevoke",
+    "UpdatePolicy",
+    "Fence",
+    "Load[0]/ignore",
+    "Isolate",
+    "Persist",
+    "CommitCut"
+  ]
+}

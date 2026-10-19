@@ -1,0 +1,13 @@
+{
+  "tasks": 100,
+  "charged_model_calls": {
+    "NoRevocation": 15,
+    "SourceOnly": 15,
+    "DeleteAll": 15,
+    "CLR": 15,
+    "CLR+Reconstruct": 17
+  },
+  "definition": "Every recorded admission slot corresponds to one charged model invocation; shared pre-cut slots are included, counterfactual replays are excluded.",
+  "low_ceiling_threshold": 0.5,
+  "source": "agent/v6_2_qwen2_5_7b/task_*.json"
+}

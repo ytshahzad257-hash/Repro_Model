@@ -1,0 +1,749 @@
+{
+  "metadata": {
+    "configuration": null,
+    "experiment": "table6_algorithm1",
+    "git_commit": "8751aabb970bb5d6dafd3d85dfa85bf411313d76",
+    "git_dirty": true,
+    "inputs": {
+      "configuration": "Governed",
+      "sources": [
+        1,
+        2,
+        3
+      ]
+    },
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "seed": null,
+    "source_sha256": "47717873f76a0e24c116d7b322cb5efe71ba478bed490677e10c4f5dba73f2bf",
+    "timestamp_utc": "2026-10-18T12:20:27.937018+00:00"
+  },
+  "rows": [
+    {
+      "answer_left": "0",
+      "answer_right": "1",
+      "explored_product_nodes": 129,
+      "question": "admission",
+      "recorder": "receipts",
+      "sources": 1,
+      "verdict": "insufficient",
+      "witness_left": [
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ],
+      "witness_right": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/use",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ]
+    },
+    {
+      "answer_left": null,
+      "answer_right": null,
+      "explored_product_nodes": 149,
+      "question": "order",
+      "recorder": "receipts",
+      "sources": 1,
+      "verdict": "sufficient",
+      "witness_left": null,
+      "witness_right": null
+    },
+    {
+      "answer_left": "False",
+      "answer_right": "True",
+      "explored_product_nodes": 183,
+      "question": "causal",
+      "recorder": "receipts",
+      "sources": 1,
+      "verdict": "insufficient",
+      "witness_left": [
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ],
+      "witness_right": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/use",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ]
+    },
+    {
+      "answer_left": null,
+      "answer_right": null,
+      "explored_product_nodes": 1152,
+      "question": "admission",
+      "recorder": "admission_ledger",
+      "sources": 1,
+      "verdict": "sufficient",
+      "witness_left": null,
+      "witness_right": null
+    },
+    {
+      "answer_left": "('Fence', 'Isolate', 'Persist', 'CommitCut')",
+      "answer_right": "('Isolate', 'Fence', 'Persist', 'CommitCut')",
+      "explored_product_nodes": 1453,
+      "question": "order",
+      "recorder": "admission_ledger",
+      "sources": 1,
+      "verdict": "insufficient",
+      "witness_left": [
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Fence",
+        "Isolate",
+        "Persist",
+        "CommitCut"
+      ],
+      "witness_right": [
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ]
+    },
+    {
+      "answer_left": "True",
+      "answer_right": "False",
+      "explored_product_nodes": 2729,
+      "question": "causal",
+      "recorder": "admission_ledger",
+      "sources": 1,
+      "verdict": "insufficient",
+      "witness_left": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/use",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ],
+      "witness_right": [
+        "Read[0]",
+        "Derive[0]",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Fence",
+        "Load[0]/ignore",
+        "Isolate",
+        "Persist",
+        "CommitCut"
+      ]
+    },
+    {
+      "answer_left": null,
+      "answer_right": null,
+      "explored_product_nodes": 96,
+      "question": "admission",
+      "recorder": "receipts_plus_admission_ledger",
+      "sources": 1,
+      "verdict": "sufficient",
+      "witness_left": null,
+      "witness_right": null
+    },
+    {
+      "answer_left": null,
+      "answer_right": null,
+      "explored_product_nodes": 125,
+      "question": "order",
+      "recorder": "receipts_plus_admission_ledger",
+      "sources": 1,
+      "verdict": "sufficient",
+      "witness_left": null,
+      "witness_right": null
+    },
+    {
+      "answer_left": "True",
+      "answer_right": "False",
+      "explored_product_nodes": 156,
+      "question": "causal",
+      "recorder": "receipts_plus_admission_ledger",
+      "sources": 1,
+      "verdict": "insufficient",
+      "witness_left": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/use",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ],
+      "witness_right": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/ignore",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ]
+    },
+    {
+      "answer_left": null,
+      "answer_right": null,
+      "explored_product_nodes": 48,
+      "question": "admission",
+      "recorder": "full_mediator_log",
+      "sources": 1,
+      "verdict": "sufficient",
+      "witness_left": null,
+      "witness_right": null
+    },
+    {
+      "answer_left": null,
+      "answer_right": null,
+      "explored_product_nodes": 59,
+      "question": "order",
+      "recorder": "full_mediator_log",
+      "sources": 1,
+      "verdict": "sufficient",
+      "witness_left": null,
+      "witness_right": null
+    },
+    {
+      "answer_left": "True",
+      "answer_right": "False",
+      "explored_product_nodes": 108,
+      "question": "causal",
+      "recorder": "full_mediator_log",
+      "sources": 1,
+      "verdict": "insufficient",
+      "witness_left": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/use",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ],
+      "witness_right": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/ignore",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ]
+    },
+    {
+      "answer_left": "0",
+      "answer_right": "1",
+      "explored_product_nodes": 1319,
+      "question": "admission",
+      "recorder": "receipts",
+      "sources": 2,
+      "verdict": "insufficient",
+      "witness_left": [
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ],
+      "witness_right": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/use",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ]
+    },
+    {
+      "answer_left": null,
+      "answer_right": null,
+      "explored_product_nodes": 2333,
+      "question": "order",
+      "recorder": "receipts",
+      "sources": 2,
+      "verdict": "sufficient",
+      "witness_left": null,
+      "witness_right": null
+    },
+    {
+      "answer_left": "False",
+      "answer_right": "True",
+      "explored_product_nodes": 2165,
+      "question": "causal",
+      "recorder": "receipts",
+      "sources": 2,
+      "verdict": "insufficient",
+      "witness_left": [
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ],
+      "witness_right": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/use",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ]
+    },
+    {
+      "answer_left": null,
+      "answer_right": null,
+      "explored_product_nodes": 16128,
+      "question": "admission",
+      "recorder": "admission_ledger",
+      "sources": 2,
+      "verdict": "sufficient",
+      "witness_left": null,
+      "witness_right": null
+    },
+    {
+      "answer_left": "('Fence', 'Isolate', 'Persist', 'CommitCut')",
+      "answer_right": "('Isolate', 'Fence', 'Persist', 'CommitCut')",
+      "explored_product_nodes": 11510,
+      "question": "order",
+      "recorder": "admission_ledger",
+      "sources": 2,
+      "verdict": "insufficient",
+      "witness_left": [
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Fence",
+        "Isolate",
+        "Persist",
+        "CommitCut"
+      ],
+      "witness_right": [
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ]
+    },
+    {
+      "answer_left": "True",
+      "answer_right": "False",
+      "explored_product_nodes": 40575,
+      "question": "causal",
+      "recorder": "admission_ledger",
+      "sources": 2,
+      "verdict": "insufficient",
+      "witness_left": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/use",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ],
+      "witness_right": [
+        "Read[0]",
+        "Derive[0]",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Fence",
+        "Load[0]/ignore",
+        "Isolate",
+        "Persist",
+        "CommitCut"
+      ]
+    },
+    {
+      "answer_left": null,
+      "answer_right": null,
+      "explored_product_nodes": 1104,
+      "question": "admission",
+      "recorder": "receipts_plus_admission_ledger",
+      "sources": 2,
+      "verdict": "sufficient",
+      "witness_left": null,
+      "witness_right": null
+    },
+    {
+      "answer_left": null,
+      "answer_right": null,
+      "explored_product_nodes": 1357,
+      "question": "order",
+      "recorder": "receipts_plus_admission_ledger",
+      "sources": 2,
+      "verdict": "sufficient",
+      "witness_left": null,
+      "witness_right": null
+    },
+    {
+      "answer_left": "True",
+      "answer_right": "False",
+      "explored_product_nodes": 1770,
+      "question": "causal",
+      "recorder": "receipts_plus_admission_ledger",
+      "sources": 2,
+      "verdict": "insufficient",
+      "witness_left": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/use",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ],
+      "witness_right": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/ignore",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ]
+    },
+    {
+      "answer_left": null,
+      "answer_right": null,
+      "explored_product_nodes": 240,
+      "question": "admission",
+      "recorder": "full_mediator_log",
+      "sources": 2,
+      "verdict": "sufficient",
+      "witness_left": null,
+      "witness_right": null
+    },
+    {
+      "answer_left": null,
+      "answer_right": null,
+      "explored_product_nodes": 253,
+      "question": "order",
+      "recorder": "full_mediator_log",
+      "sources": 2,
+      "verdict": "sufficient",
+      "witness_left": null,
+      "witness_right": null
+    },
+    {
+      "answer_left": "True",
+      "answer_right": "False",
+      "explored_product_nodes": 525,
+      "question": "causal",
+      "recorder": "full_mediator_log",
+      "sources": 2,
+      "verdict": "insufficient",
+      "witness_left": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/use",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ],
+      "witness_right": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/ignore",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ]
+    },
+    {
+      "answer_left": "0",
+      "answer_right": "1",
+      "explored_product_nodes": 8497,
+      "question": "admission",
+      "recorder": "receipts",
+      "sources": 3,
+      "verdict": "insufficient",
+      "witness_left": [
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ],
+      "witness_right": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/use",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ]
+    },
+    {
+      "answer_left": null,
+      "answer_right": null,
+      "explored_product_nodes": 37493,
+      "question": "order",
+      "recorder": "receipts",
+      "sources": 3,
+      "verdict": "sufficient",
+      "witness_left": null,
+      "witness_right": null
+    },
+    {
+      "answer_left": "False",
+      "answer_right": "True",
+      "explored_product_nodes": 14195,
+      "question": "causal",
+      "recorder": "receipts",
+      "sources": 3,
+      "verdict": "insufficient",
+      "witness_left": [
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ],
+      "witness_right": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/use",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ]
+    },
+    {
+      "answer_left": null,
+      "answer_right": null,
+      "explored_product_nodes": 202752,
+      "question": "admission",
+      "recorder": "admission_ledger",
+      "sources": 3,
+      "verdict": "sufficient",
+      "witness_left": null,
+      "witness_right": null
+    },
+    {
+      "answer_left": "('Fence', 'Isolate', 'Persist', 'CommitCut')",
+      "answer_right": "('Isolate', 'Fence', 'Persist', 'CommitCut')",
+      "explored_product_nodes": 70799,
+      "question": "order",
+      "recorder": "admission_ledger",
+      "sources": 3,
+      "verdict": "insufficient",
+      "witness_left": [
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Fence",
+        "Isolate",
+        "Persist",
+        "CommitCut"
+      ],
+      "witness_right": [
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ]
+    },
+    {
+      "answer_left": "True",
+      "answer_right": "False",
+      "explored_product_nodes": 407392,
+      "question": "causal",
+      "recorder": "admission_ledger",
+      "sources": 3,
+      "verdict": "insufficient",
+      "witness_left": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/use",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ],
+      "witness_right": [
+        "Read[0]",
+        "Derive[0]",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Fence",
+        "Load[0]/ignore",
+        "Isolate",
+        "Persist",
+        "CommitCut"
+      ]
+    },
+    {
+      "answer_left": null,
+      "answer_right": null,
+      "explored_product_nodes": 12336,
+      "question": "admission",
+      "recorder": "receipts_plus_admission_ledger",
+      "sources": 3,
+      "verdict": "sufficient",
+      "witness_left": null,
+      "witness_right": null
+    },
+    {
+      "answer_left": null,
+      "answer_right": null,
+      "explored_product_nodes": 14309,
+      "question": "order",
+      "recorder": "receipts_plus_admission_ledger",
+      "sources": 3,
+      "verdict": "sufficient",
+      "witness_left": null,
+      "witness_right": null
+    },
+    {
+      "answer_left": "True",
+      "answer_right": "False",
+      "explored_product_nodes": 13264,
+      "question": "causal",
+      "recorder": "receipts_plus_admission_ledger",
+      "sources": 3,
+      "verdict": "insufficient",
+      "witness_left": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/use",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ],
+      "witness_right": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/ignore",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ]
+    },
+    {
+      "answer_left": null,
+      "answer_right": null,
+      "explored_product_nodes": 1104,
+      "question": "admission",
+      "recorder": "full_mediator_log",
+      "sources": 3,
+      "verdict": "sufficient",
+      "witness_left": null,
+      "witness_right": null
+    },
+    {
+      "answer_left": null,
+      "answer_right": null,
+      "explored_product_nodes": 1007,
+      "question": "order",
+      "recorder": "full_mediator_log",
+      "sources": 3,
+      "verdict": "sufficient",
+      "witness_left": null,
+      "witness_right": null
+    },
+    {
+      "answer_left": "True",
+      "answer_right": "False",
+      "explored_product_nodes": 1928,
+      "question": "causal",
+      "recorder": "full_mediator_log",
+      "sources": 3,
+      "verdict": "insufficient",
+      "witness_left": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/use",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ],
+      "witness_right": [
+        "Read[0]",
+        "Derive[0]",
+        "Load[0]/ignore",
+        "RequestRevoke",
+        "UpdatePolicy",
+        "Isolate",
+        "Fence",
+        "Persist",
+        "CommitCut"
+      ]
+    }
+  ],
+  "seconds": {
+    "1": 0.26,
+    "2": 4.01,
+    "3": 46.5
+  },
+  "verdicts_identical_across_K": true
+}

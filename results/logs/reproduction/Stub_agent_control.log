@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/work/rev6/repo/experiments/agent/run_agent_experiment.py", line 164, in <module>
+    a=p.parse_args();run(a.tasks,a.dry_run,a.provider,a.model,a.endpoint,a.output)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/work/rev6/repo/experiments/agent/run_agent_experiment.py", line 139, in run
+    if record['task']!=task(index,seed):raise RuntimeError('Cached workload differs from current seeds/protocol; preserve it and use a fresh output directory')
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Cached workload differs from current seeds/protocol; preserve it and use a fresh output directory

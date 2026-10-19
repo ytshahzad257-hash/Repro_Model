@@ -1,0 +1,100 @@
+[
+  {
+    "sources": 1,
+    "recorder": "receipts",
+    "question": "admission",
+    "verdict": "insufficient",
+    "explored_product_nodes": 129,
+    "witness_left": [
+      "RequestRevoke",
+      "UpdatePolicy",
+      "Isolate",
+      "Fence",
+      "Persist",
+      "CommitCut"
+    ],
+    "witness_right": [
+      "Read[0]",
+      "Derive[0]",
+      "Load[0]/use",
+      "RequestRevoke",
+      "UpdatePolicy",
+      "Isolate",
+      "Fence",
+      "Persist",
+      "CommitCut"
+    ],
+    "answer_left": "0",
+    "answer_right": "1"
+  },
+  {
+    "sources": 1,
+    "recorder": "receipts",
+    "question": "order",
+    "verdict": "sufficient",
+    "explored_product_nodes": 149,
+    "witness_left": null,
+    "witness_right": null,
+    "answer_left": null,
+    "answer_right": null
+  },
+  {
+    "sources": 1,
+    "recorder": "receipts",
+    "question": "causal",
+    "verdict": "insufficient",
+    "explored_product_nodes": 183,
+    "witness_left": [
+      "RequestRevoke",
+      "UpdatePolicy",
+      "Isolate",
+      "Fence",
+      "Persist",
+      "CommitCut"
+    ],
+    "witness_right": [
+      "Read[0]",
+      "Derive[0]",
+      "Load[0]/use",
+      "RequestRevoke",
+      "UpdatePolicy",
+      "Isolate",
+      "Fence",
+      "Persist",
+      "CommitCut"
+    ],
+    "answer_left": "False",
+    "answer_right": "True"
+  },
+  {
+    "sources": 1,
+    "recorder": "admission_ledger",
+    "question": "admission",
+    "verdict": "sufficient",
+    "explored_product_nodes": 1152,
+    "witness_left": null,
+    "witness_right": null,
+    "answer_left": null,
+    "answer_right": null
+  },
+  {
+    "sources": 1,
+    "recorder": "admission_ledger",
+    "question": "order",
+    "verdict": "insufficient",
+    "explored_product_nodes": 1453,
+    "witness_left": [
+      "RequestRevoke",
+      "UpdatePolicy",
+      "Fence",
+      "Isolate",
+      "Persist",
+      "CommitCut"
+    ],
+    "witness_right": [
+      "RequestRevoke",
+      "UpdatePolicy",
+      "Isolate",
+      "Fence",
+      "Persist",
+   

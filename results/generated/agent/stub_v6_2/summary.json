@@ -1,0 +1,828 @@
+{
+  "version": "6.2",
+  "complete": true,
+  "tasks": 200,
+  "raw_task_logs": 200,
+  "conditions": 5,
+  "condition_names": [
+    "NoRevocation",
+    "SourceOnly",
+    "DeleteAll",
+    "CLR",
+    "CLR+Reconstruct"
+  ],
+  "provider": "stub",
+  "model": "deterministic-schema-quote-stub-v6.2",
+  "temperature": 0,
+  "num_ctx": 4096,
+  "summary_max_tokens": 160,
+  "plan_max_tokens": 64,
+  "followup_max_tokens": 48,
+  "queries_per_task": 12,
+  "counterfactual_repeats": 3,
+  "confidence_level": 0.95,
+  "documents_min": 5,
+  "documents_max": 10,
+  "restricted_min": 1,
+  "restricted_max": 3,
+  "templates": 3,
+  "fuzzy_tolerance": 0.01,
+  "paired_difference_confidence_level": 0.95,
+  "discordant_cell_confidence_level": 0.975,
+  "paired_tests": 8,
+  "multiplicity_method": "Holm across primary and secondary contrasts",
+  "seed": 610018,
+  "rows": [
+    {
+      "condition": "NoRevocation",
+      "exact_task_leak": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "fuzzy_task_leak": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "utility": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "secondary_utility": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "audit_admission_correct": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "audit_order_correct": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "ledger_logical_bits": {
+        "mean": 112.65,
+        "half_width": 3.518322153224367,
+        "lower": 109.13167784677564,
+        "upper": 116.16832215322437,
+        "method": "normal mean interval"
+      },
+      "declared_slot_bound_bits": {
+        "mean": 112.65,
+        "half_width": 3.518322153224367,
+        "lower": 109.13167784677564,
+        "upper": 116.16832215322437,
+        "method": "normal mean interval"
+      },
+      "ledger_serialized_bytes": {
+        "mean": 1252.9,
+        "half_width": 21.1099329193462,
+        "lower": 1231.790067080654,
+        "upper": 1274.0099329193463,
+        "method": "normal mean interval"
+      },
+      "quarantined_share": {
+        "mean": 0.0,
+        "half_width": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "method": "normal mean interval"
+      },
+      "detected_sensitive_share": {
+        "mean": 0.5,
+        "half_width": 0.0,
+        "lower": 0.5,
+        "upper": 0.5,
+        "method": "normal mean interval"
+      },
+      "quarantined_without_detected_sensitivity": {
+        "mean": 0.0,
+        "half_width": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "method": "normal mean interval"
+      },
+      "seconds": {
+        "mean": 0.00044978269550483674,
+        "half_width": 1.2379652274993778e-05,
+        "lower": 0.000437403043229843,
+        "upper": 0.0004621623477798305,
+        "method": "normal mean interval"
+      },
+      "label_seconds": {
+        "mean": 2.761984127573669e-05,
+        "half_width": 6.65279464004336e-07,
+        "lower": 2.6954561811732356e-05,
+        "upper": 2.8285120739741025e-05,
+        "method": "normal mean interval"
+      },
+      "provider_seconds": {
+        "mean": 0.0002937372581800446,
+        "half_width": 8.71468863689421e-06,
+        "lower": 0.0002850225695431504,
+        "upper": 0.0003024519468169388,
+        "method": "normal mean interval"
+      },
+      "input_tokens": {
+        "mean": 8693.82,
+        "half_width": 253.78830465258432,
+        "lower": 8440.031695347416,
+        "upper": 8947.608304652584,
+        "method": "normal mean interval"
+      },
+      "output_tokens": {
+        "mean": 886.67,
+        "half_width": 27.44291279515006,
+        "lower": 859.2270872048499,
+        "upper": 914.11291279515,
+        "method": "normal mean interval"
+      }
+    },
+    {
+      "condition": "SourceOnly",
+      "exact_task_leak": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "fuzzy_task_leak": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "utility": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "secondary_utility": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "audit_admission_correct": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "audit_order_correct": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "ledger_logical_bits": {
+        "mean": 113.65,
+        "half_width": 3.518322153224367,
+        "lower": 110.13167784677564,
+        "upper": 117.16832215322437,
+        "method": "normal mean interval"
+      },
+      "declared_slot_bound_bits": {
+        "mean": 113.65,
+        "half_width": 3.518322153224367,
+        "lower": 110.13167784677564,
+        "upper": 117.16832215322437,
+        "method": "normal mean interval"
+      },
+      "ledger_serialized_bytes": {
+        "mean": 1327.9,
+        "half_width": 21.1099329193462,
+        "lower": 1306.790067080654,
+        "upper": 1349.0099329193463,
+        "method": "normal mean interval"
+      },
+      "quarantined_share": {
+        "mean": 0.0,
+        "half_width": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "method": "normal mean interval"
+      },
+      "detected_sensitive_share": {
+        "mean": 0.5,
+        "half_width": 0.0,
+        "lower": 0.5,
+        "upper": 0.5,
+        "method": "normal mean interval"
+      },
+      "quarantined_without_detected_sensitivity": {
+        "mean": 0.0,
+        "half_width": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "method": "normal mean interval"
+      },
+      "seconds": {
+        "mean": 0.0004639714743825607,
+        "half_width": 5.732689867532955e-05,
+        "lower": 0.0004066445757072312,
+        "upper": 0.0005212983730578903,
+        "method": "normal mean interval"
+      },
+      "label_seconds": {
+        "mean": 5.804141575936228e-05,
+        "half_width": 5.4569251542827074e-05,
+        "lower": 3.47216421653521e-06,
+        "upper": 0.00011261066730218936,
+        "method": "normal mean interval"
+      },
+      "provider_seconds": {
+        "mean": 0.0002936249354388565,
+        "half_width": 8.777996761450716e-06,
+        "lower": 0.00028484693867740577,
+        "upper": 0.00030240293220030724,
+        "method": "normal mean interval"
+      },
+      "input_tokens": {
+        "mean": 8692.82,
+        "half_width": 253.78830465258432,
+        "lower": 8439.031695347416,
+        "upper": 8946.608304652584,
+        "method": "normal mean interval"
+      },
+      "output_tokens": {
+        "mean": 886.67,
+        "half_width": 27.44291279515006,
+        "lower": 859.2270872048499,
+        "upper": 914.11291279515,
+        "method": "normal mean interval"
+      }
+    },
+    {
+      "condition": "DeleteAll",
+      "exact_task_leak": {
+        "mean": 0.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0,
+        "upper": 0.018846005918320894,
+        "method": "Wilson"
+      },
+      "fuzzy_task_leak": {
+        "mean": 0.055,
+        "half_width": 0.0324014518322827,
+        "lower": 0.030985020801370097,
+        "upper": 0.0957879244659355,
+        "method": "Wilson"
+      },
+      "utility": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "secondary_utility": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "audit_admission_correct": {
+        "mean": 0.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0,
+        "upper": 0.018846005918320894,
+        "method": "Wilson"
+      },
+      "audit_order_correct": {
+        "mean": 0.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0,
+        "upper": 0.018846005918320894,
+        "method": "Wilson"
+      },
+      "ledger_logical_bits": {
+        "mean": 0.0,
+        "half_width": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "method": "normal mean interval"
+      },
+      "declared_slot_bound_bits": {
+        "mean": 113.65,
+        "half_width": 3.518322153224367,
+        "lower": 110.13167784677564,
+        "upper": 117.16832215322437,
+        "method": "normal mean interval"
+      },
+      "ledger_serialized_bytes": {
+        "mean": 0.0,
+        "half_width": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "method": "normal mean interval"
+      },
+      "quarantined_share": {
+        "mean": 0.0,
+        "half_width": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "method": "normal mean interval"
+      },
+      "detected_sensitive_share": {
+        "mean": 0.5,
+        "half_width": 0.0,
+        "lower": 0.5,
+        "upper": 0.5,
+        "method": "normal mean interval"
+      },
+      "quarantined_without_detected_sensitivity": {
+        "mean": 0.0,
+        "half_width": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "method": "normal mean interval"
+      },
+      "seconds": {
+        "mean": 0.0003395847999490798,
+        "half_width": 1.0720716697700165e-05,
+        "lower": 0.0003288640832513796,
+        "upper": 0.00035030551664677997,
+        "method": "normal mean interval"
+      },
+      "label_seconds": {
+        "mean": 2.064152300590649e-05,
+        "half_width": 5.177281849170778e-07,
+        "lower": 2.0123794820989414e-05,
+        "upper": 2.115925119082357e-05,
+        "method": "normal mean interval"
+      },
+      "provider_seconds": {
+        "mean": 0.0002092535316478461,
+        "half_width": 7.036298370790547e-06,
+        "lower": 0.00020221723327705556,
+        "upper": 0.00021628983001863663,
+        "method": "normal mean interval"
+      },
+      "input_tokens": {
+        "mean": 5960.48,
+        "half_width": 198.90247906228421,
+        "lower": 5761.577520937715,
+        "upper": 6159.382479062284,
+        "method": "normal mean interval"
+      },
+      "output_tokens": {
+        "mean": 778.67,
+        "half_width": 27.44291279515006,
+        "lower": 751.2270872048499,
+        "upper": 806.11291279515,
+        "method": "normal mean interval"
+      }
+    },
+    {
+      "condition": "CLR",
+      "exact_task_leak": {
+        "mean": 0.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0,
+        "upper": 0.018846005918320894,
+        "method": "Wilson"
+      },
+      "fuzzy_task_leak": {
+        "mean": 0.055,
+        "half_width": 0.0324014518322827,
+        "lower": 0.030985020801370097,
+        "upper": 0.0957879244659355,
+        "method": "Wilson"
+      },
+      "utility": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "secondary_utility": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "audit_admission_correct": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "audit_order_correct": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "ledger_logical_bits": {
+        "mean": 113.65,
+        "half_width": 3.518322153224367,
+        "lower": 110.13167784677564,
+        "upper": 117.16832215322437,
+        "method": "normal mean interval"
+      },
+      "declared_slot_bound_bits": {
+        "mean": 113.65,
+        "half_width": 3.518322153224367,
+        "lower": 110.13167784677564,
+        "upper": 117.16832215322437,
+        "method": "normal mean interval"
+      },
+      "ledger_serialized_bytes": {
+        "mean": 1249.9,
+        "half_width": 21.1099329193462,
+        "lower": 1228.790067080654,
+        "upper": 1271.0099329193463,
+        "method": "normal mean interval"
+      },
+      "quarantined_share": {
+        "mean": 1.0,
+        "half_width": 0.0,
+        "lower": 1.0,
+        "upper": 1.0,
+        "method": "normal mean interval"
+      },
+      "detected_sensitive_share": {
+        "mean": 0.5,
+        "half_width": 0.0,
+        "lower": 0.5,
+        "upper": 0.5,
+        "method": "normal mean interval"
+      },
+      "quarantined_without_detected_sensitivity": {
+        "mean": 0.5,
+        "half_width": 0.0,
+        "lower": 0.5,
+        "upper": 0.5,
+        "method": "normal mean interval"
+      },
+      "seconds": {
+        "mean": 0.000351666311325971,
+        "half_width": 1.0299707196306367e-05,
+        "lower": 0.00034136660412966465,
+        "upper": 0.0003619660185222774,
+        "method": "normal mean interval"
+      },
+      "label_seconds": {
+        "mean": 2.15889242826961e-05,
+        "half_width": 6.961261984213731e-07,
+        "lower": 2.0892798084274725e-05,
+        "upper": 2.2285050481117473e-05,
+        "method": "normal mean interval"
+      },
+      "provider_seconds": {
+        "mean": 0.00021177909395191818,
+        "half_width": 6.962998614435216e-06,
+        "lower": 0.00020481609533748297,
+        "upper": 0.0002187420925663534,
+        "method": "normal mean interval"
+      },
+      "input_tokens": {
+        "mean": 6064.48,
+        "half_width": 198.90247906228421,
+        "lower": 5865.577520937715,
+        "upper": 6263.382479062284,
+        "method": "normal mean interval"
+      },
+      "output_tokens": {
+        "mean": 778.67,
+        "half_width": 27.44291279515006,
+        "lower": 751.2270872048499,
+        "upper": 806.11291279515,
+        "method": "normal mean interval"
+      }
+    },
+    {
+      "condition": "CLR+Reconstruct",
+      "exact_task_leak": {
+        "mean": 0.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0,
+        "upper": 0.018846005918320894,
+        "method": "Wilson"
+      },
+      "fuzzy_task_leak": {
+        "mean": 0.055,
+        "half_width": 0.0324014518322827,
+        "lower": 0.030985020801370097,
+        "upper": 0.0957879244659355,
+        "method": "Wilson"
+      },
+      "utility": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "secondary_utility": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "audit_admission_correct": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "audit_order_correct": {
+        "mean": 1.0,
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "upper": 1,
+        "method": "Wilson"
+      },
+      "ledger_logical_bits": {
+        "mean": 128.67,
+        "half_width": 3.9874317736542824,
+        "lower": 124.68256822634571,
+        "upper": 132.65743177365428,
+        "method": "normal mean interval"
+      },
+      "declared_slot_bound_bits": {
+        "mean": 128.67,
+        "half_width": 3.9874317736542824,
+        "lower": 124.68256822634571,
+        "upper": 132.65743177365428,
+        "method": "normal mean interval"
+      },
+      "ledger_serialized_bytes": {
+        "mean": 1421.02,
+        "half_width": 23.924590641925697,
+        "lower": 1397.0954093580742,
+        "upper": 1444.9445906419257,
+        "method": "normal mean interval"
+      },
+      "quarantined_share": {
+        "mean": 1.0,
+        "half_width": 0.0,
+        "lower": 1.0,
+        "upper": 1.0,
+        "method": "normal mean interval"
+      },
+      "detected_sensitive_share": {
+        "mean": 0.5,
+        "half_width": 0.0,
+        "lower": 0.5,
+        "upper": 0.5,
+        "method": "normal mean interval"
+      },
+      "quarantined_without_detected_sensitivity": {
+        "mean": 0.5,
+        "half_width": 0.0,
+        "lower": 0.5,
+        "upper": 0.5,
+        "method": "normal mean interval"
+      },
+      "seconds": {
+        "mean": 0.0004282558578415774,
+        "half_width": 1.2892726275142643e-05,
+        "lower": 0.00041536313156643475,
+        "upper": 0.00044114858411672004,
+        "method": "normal mean interval"
+      },
+      "label_seconds": {
+        "mean": 2.7556120767258107e-05,
+        "half_width": 8.36437090350945e-07,
+        "lower": 2.671968367690716e-05,
+        "upper": 2.8392557857609054e-05,
+        "method": "normal mean interval"
+      },
+      "provider_seconds": {
+        "mean": 0.00027440205682069066,
+        "half_width": 9.670961744957298e-06,
+        "lower": 0.00026473109507573335,
+        "upper": 0.00028407301856564796,
+        "method": "normal mean interval"
+      },
+      "input_tokens": {
+        "mean": 7967.1,
+        "half_width": 260.3558393386031,
+        "lower": 7706.7441606613975,
+        "upper": 8227.455839338603,
+        "method": "normal mean interval"
+      },
+      "output_tokens": {
+        "mean": 841.26,
+        "half_width": 29.55390608708468,
+        "lower": 811.7060939129153,
+        "upper": 870.8139060870847,
+        "method": "normal mean interval"
+      }
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "condition": "SourceOnly",
+      "endpoint": "utility",
+      "tasks": 200,
+      "wins": 0,
+      "losses": 0,
+      "both_success": 200,
+      "both_failure": 0,
+      "difference": 0.0,
+      "lower": -0.021671849652908415,
+      "upper": 0.021671849652908415,
+      "mcnemar_exact_p": 1.0,
+      "interval_method": "Bonferroni simultaneous exact Clopper-Pearson discordant-cell intervals; at least 95% pointwise coverage",
+      "holm_p": 1.0
+    },
+    {
+      "condition": "SourceOnly",
+      "endpoint": "secondary_utility",
+      "tasks": 200,
+      "wins": 0,
+      "losses": 0,
+      "both_success": 200,
+      "both_failure": 0,
+      "difference": 0.0,
+      "lower": -0.021671849652908415,
+      "upper": 0.021671849652908415,
+      "mcnemar_exact_p": 1.0,
+      "interval_method": "Bonferroni simultaneous exact Clopper-Pearson discordant-cell intervals; at least 95% pointwise coverage",
+      "holm_p": 1.0
+    },
+    {
+      "condition": "DeleteAll",
+      "endpoint": "utility",
+      "tasks": 200,
+      "wins": 0,
+      "losses": 0,
+      "both_success": 200,
+      "both_failure": 0,
+      "difference": 0.0,
+      "lower": -0.021671849652908415,
+      "upper": 0.021671849652908415,
+      "mcnemar_exact_p": 1.0,
+      "interval_method": "Bonferroni simultaneous exact Clopper-Pearson discordant-cell intervals; at least 95% pointwise coverage",
+      "holm_p": 1.0
+    },
+    {
+      "condition": "DeleteAll",
+      "endpoint": "secondary_utility",
+      "tasks": 200,
+      "wins": 0,
+      "losses": 0,
+      "both_success": 200,
+      "both_failure": 0,
+      "difference": 0.0,
+      "lower": -0.021671849652908415,
+      "upper": 0.021671849652908415,
+      "mcnemar_exact_p": 1.0,
+      "interval_method": "Bonferroni simultaneous exact Clopper-Pearson discordant-cell intervals; at least 95% pointwise coverage",
+      "holm_p": 1.0
+    },
+    {
+      "condition": "CLR",
+      "endpoint": "utility",
+      "tasks": 200,
+      "wins": 0,
+      "losses": 0,
+      "both_success": 200,
+      "both_failure": 0,
+      "difference": 0.0,
+      "lower": -0.021671849652908415,
+      "upper": 0.021671849652908415,
+      "mcnemar_exact_p": 1.0,
+      "interval_method": "Bonferroni simultaneous exact Clopper-Pearson discordant-cell intervals; at least 95% pointwise coverage",
+      "holm_p": 1.0
+    },
+    {
+      "condition": "CLR",
+      "endpoint": "secondary_utility",
+      "tasks": 200,
+      "wins": 0,
+      "losses": 0,
+      "both_success": 200,
+      "both_failure": 0,
+      "difference": 0.0,
+      "lower": -0.021671849652908415,
+      "upper": 0.021671849652908415,
+      "mcnemar_exact_p": 1.0,
+      "interval_method": "Bonferroni simultaneous exact Clopper-Pearson discordant-cell intervals; at least 95% pointwise coverage",
+      "holm_p": 1.0
+    },
+    {
+      "condition": "CLR+Reconstruct",
+      "endpoint": "utility",
+      "tasks": 200,
+      "wins": 0,
+      "losses": 0,
+      "both_success": 200,
+      "both_failure": 0,
+      "difference": 0.0,
+      "lower": -0.021671849652908415,
+      "upper": 0.021671849652908415,
+      "mcnemar_exact_p": 1.0,
+      "interval_method": "Bonferroni simultaneous exact Clopper-Pearson discordant-cell intervals; at least 95% pointwise coverage",
+      "holm_p": 1.0
+    },
+    {
+      "condition": "CLR+Reconstruct",
+      "endpoint": "secondary_utility",
+      "tasks": 200,
+      "wins": 0,
+      "losses": 0,
+      "both_success": 200,
+      "both_failure": 0,
+      "difference": 0.0,
+      "lower": -0.021671849652908415,
+      "upper": 0.021671849652908415,
+      "mcnemar_exact_p": 1.0,
+      "interval_method": "Bonferroni simultaneous exact Clopper-Pearson discordant-cell intervals; at least 95% pointwise coverage",
+      "holm_p": 1.0
+    }
+  ],
+  "sample_decision": {
+    "tasks": 200,
+    "rule": "fixed 200-task schema/implementation control; no model inference",
+    "signature": {
+      "model": "qwen2.5:7b",
+      "provider": "stub",
+      "protocol": {
+        "preregistration_sha256": "96a03cf67f5911d56b3a0bb56ae2c1f8d6068c8963044a08afc0277927f87160",
+        "protocol_sha256": "26ad376ff729583020b43c6e39433d1458510c0be088d863cecbb552c16278e1",
+        "files": {
+          "experiments/agent/run_agent_v6_2.py": "570af15607a77230d01343c67852d2f2ca9415ea81dc465284d0f9932ad6982c",
+          "experiments/agent/paired_statistics.py": "ddd5fe5a4a545ec5f3a5b829ec828dcd2361163fe282bb0993ff3966d2ce4786",
+          "experiments/agent/run_agent_experiment.py": "714632c99910cacdb135fe95a7773235c050e98652f3a9ad7b11add96f93b238",
+          "src/apr/agent/prototype.py": "290990ef844857b1fd2a6fb2eda9939752e56eae1c3b96e946b53b5337ca1c6a",
+          "experiments/seeds.json": "47e2a2fcd9ed9a1f5b3923e202ea98d5726415e55c5e8cc3f50a81f23db23831",
+          "experiments/agent/PREREGISTRATION_6_2.md": "96a03cf67f5911d56b3a0bb56ae2c1f8d6068c8963044a08afc0277927f87160"
+        }
+      }
+    }
+  },
+  "protocol": {
+    "preregistration_sha256": "96a03cf67f5911d56b3a0bb56ae2c1f8d6068c8963044a08afc0277927f87160",
+    "protocol_sha256": "26ad376ff729583020b43c6e39433d1458510c0be088d863cecbb552c16278e1",
+    "files": {
+      "experiments/agent/run_agent_v6_2.py": "570af15607a77230d01343c67852d2f2ca9415ea81dc465284d0f9932ad6982c",
+      "experiments/agent/paired_statistics.py": "ddd5fe5a4a545ec5f3a5b829ec828dcd2361163fe282bb0993ff3966d2ce4786",
+      "experiments/agent/run_agent_experiment.py": "714632c99910cacdb135fe95a7773235c050e98652f3a9ad7b11add96f93b238",
+      "src/apr/agent/prototype.py": "290990ef844857b1fd2a6fb2eda9939752e56eae1c3b96e946b53b5337ca1c6a",
+      "experiments/seeds.json": "47e2a2fcd9ed9a1f5b3923e202ea98d5726415e55c5e8cc3f50a81f23db23831",
+      "experiments/agent/PREREGISTRATION_6_2.md": "96a03cf67f5911d56b3a0bb56ae2c1f8d6068c8963044a08afc0277927f87160"
+    }
+  },
+  "baseline_instability_items": 0,
+  "raw_model_calls": 16200,
+  "sum_task_wall_seconds": 0.41534266876988113,
+  "aggregation_invocation_seconds": 0.1287615830078721,
+  "runtime_identity": {
+    "model_info_file": "model_information.json",
+    "manifest_file": "model_manifest.json"
+  },
+  "metadata": {
+    "timestamp_utc": "2026-10-19T02:19:42.544023+00:00",
+    "git_commit": "8751aabb970bb5d6dafd3d85dfa85bf411313d76",
+    "git_dirty": true,
+    "source_sha256": "013a81b20463c85341435c170fe1030bd9c258432b774a3a7e8606012757f563",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "configuration": null,
+    "inputs": {
+      "model": "deterministic-schema-quote-stub-v6.2",
+      "provider": "stub",
+      "tasks": 200,
+      "sample_rule": "200 if five-task projection <=10h, else first100",
+      "preregistration_sha256": "96a03cf67f5911d56b3a0bb56ae2c1f8d6068c8963044a08afc0277927f87160",
+      "protocol_sha256": "26ad376ff729583020b43c6e39433d1458510c0be088d863cecbb552c16278e1"
+    },
+    "seed": 610018,
+    "experiment": "agent_revision6_2"
+  }
+}

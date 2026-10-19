@@ -1,0 +1,73 @@
+TLC2 Version 2026.10.15.145915 (rev: 932d35e)
+Running breadth-first search Model-Checking with fp 94 and seed -6732550534577146798 with 1 worker on 10 cores with 1820MB heap and 64MB offheap memory [pid: 94050] (Mac OS X 27.0.1 aarch64, Eclipse Adoptium 21.0.12.1 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file /private/var/folders/2m/wmshwvrn3v95h02bt80fnhh00000gn/T/tlc__xg_c0wl/APR.tla
+Parsing file /private/var/folders/2m/wmshwvrn3v95h02bt80fnhh00000gn/T/tlc__xg_c0wl/APRSemantics.tla
+Parsing file /private/var/folders/2m/wmshwvrn3v95h02bt80fnhh00000gn/T/tlc-17079545523012153473/_TLCTrace.tla (jar:file:/workspace/work/tla2tools.jar!/tla2sany/StandardModules/_TLCTrace.tla)
+Parsing file /private/var/folders/2m/wmshwvrn3v95h02bt80fnhh00000gn/T/tlc-17079545523012153473/Naturals.tla (jar:file:/workspace/work/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /private/var/folders/2m/wmshwvrn3v95h02bt80fnhh00000gn/T/tlc-17079545523012153473/TLC.tla (jar:file:/workspace/work/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file /private/var/folders/2m/wmshwvrn3v95h02bt80fnhh00000gn/T/tlc-17079545523012153473/TLCExt.tla (jar:file:/workspace/work/tla2tools.jar!/tla2sany/StandardModules/TLCExt.tla)
+Parsing file /private/var/folders/2m/wmshwvrn3v95h02bt80fnhh00000gn/T/tlc-17079545523012153473/Sequences.tla (jar:file:/workspace/work/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file /private/var/folders/2m/wmshwvrn3v95h02bt80fnhh00000gn/T/tlc-17079545523012153473/FiniteSets.tla (jar:file:/workspace/work/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Parsing file /private/var/folders/2m/wmshwvrn3v95h02bt80fnhh00000gn/T/tlc-17079545523012153473/Integers.tla (jar:file:/workspace/work/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Semantic processing of module Naturals
+Semantic processing of module APRSemantics
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module Integers
+Semantic processing of module TLCExt
+Semantic processing of module _TLCTrace
+Semantic processing of module APR
+Linting of module APRSemantics
+Linting of module TLCExt
+Linting of module _TLCTrace
+Linting of module APR
+Starting... (2026-10-18 17:32:47)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-10-18 17:32:47.
+Error: Invariant InfoSafe is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+s = [ uInfo |-> FALSE,
+  uAuth |-> FALSE,
+  committed |-> FALSE,
+  evDeleted |-> FALSE,
+  secret |-> 2,
+  read |-> <<FALSE, FALSE, FALSE>>,
+  derived |-> <<FALSE, FALSE, FALSE>>,
+  loaded |-> <<FALSE, FALSE, FALSE>>,
+  cache |-> <<FALSE, FALSE, FALSE>>,
+  reqRevoke |-> FALSE,
+[compacted] ... violation traces elided ...
+[compacted] 1 x Error: Invariant InfoSafe is violated.
+[compacted] 1 x Error: The behavior up to this point is:
+  committed |-> TRUE,
+  evDeleted |-> FALSE,
+  secret |-> 2,
+  read |-> <<TRUE, FALSE, FALSE>>,
+  derived |-> <<TRUE, FALSE, FALSE>>,
+  loaded |-> <<TRUE, FALSE, FALSE>>,
+  cache |-> <<TRUE, FALSE, FALSE>>,
+  reqRevoke |-> TRUE,
+  polUpd |-> TRUE,
+  isolated |-> TRUE,
+  fenced |-> TRUE,
+  persisted |-> TRUE,
+  effPrep |-> FALSE,
+  effFired |-> FALSE,
+  grantRev |-> FALSE,
+  revOpen |-> FALSE,
+  repGen |-> FALSE,
+  answered |-> FALSE,
+  exported |-> FALSE,
+  released |-> FALSE,
+  relDelayed |-> FALSE,
+  deliberated |-> FALSE,
+  pubRecon |-> FALSE,
+  opUses |-> 1 ]
+
+2421 states generated, 927 distinct states found, 286 states left on queue.
+The depth of the complete state graph search is 11.
+Finished in 01s at (2026-10-18 17:32:47)
+Trace exploration spec path: ./APR_TTrace_1792326766.tla
+

@@ -1,0 +1,846 @@
+{
+  "version": "6.2",
+  "complete": true,
+  "tasks": 100,
+  "raw_task_logs": 100,
+  "conditions": 5,
+  "condition_names": [
+    "NoRevocation",
+    "SourceOnly",
+    "DeleteAll",
+    "CLR",
+    "CLR+Reconstruct"
+  ],
+  "provider": "ollama",
+  "model": "qwen2.5:7b",
+  "temperature": 0,
+  "num_ctx": 4096,
+  "summary_max_tokens": 160,
+  "plan_max_tokens": 64,
+  "followup_max_tokens": 48,
+  "queries_per_task": 12,
+  "counterfactual_repeats": 3,
+  "confidence_level": 0.95,
+  "documents_min": 5,
+  "documents_max": 10,
+  "restricted_min": 1,
+  "restricted_max": 3,
+  "templates": 3,
+  "fuzzy_tolerance": 0.01,
+  "paired_difference_confidence_level": 0.95,
+  "discordant_cell_confidence_level": 0.975,
+  "paired_tests": 8,
+  "multiplicity_method": "Holm across primary and secondary contrasts",
+  "seed": 610018,
+  "rows": [
+    {
+      "condition": "NoRevocation",
+      "exact_task_leak": {
+        "mean": 0.05,
+        "half_width": 0.0451043019078873,
+        "lower": 0.02154336145631356,
+        "upper": 0.11175196527208817,
+        "method": "Wilson"
+      },
+      "fuzzy_task_leak": {
+        "mean": 0.05,
+        "half_width": 0.0451043019078873,
+        "lower": 0.02154336145631356,
+        "upper": 0.11175196527208817,
+        "method": "Wilson"
+      },
+      "utility": {
+        "mean": 0.94,
+        "half_width": 0.04849197002278424,
+        "lower": 0.8752303146877748,
+        "upper": 0.9722142547333433,
+        "method": "Wilson"
+      },
+      "secondary_utility": {
+        "mean": 0.94,
+        "half_width": 0.04849197002278424,
+        "lower": 0.8752303146877748,
+        "upper": 0.9722142547333433,
+        "method": "Wilson"
+      },
+      "audit_admission_correct": {
+        "mean": 1.0,
+        "half_width": 0.018497403738000955,
+        "lower": 0.9630051925239981,
+        "upper": 0.9999999999999999,
+        "method": "Wilson"
+      },
+      "audit_order_correct": {
+        "mean": 1.0,
+        "half_width": 0.018497403738000955,
+        "lower": 0.9630051925239981,
+        "upper": 0.9999999999999999,
+        "method": "Wilson"
+      },
+      "ledger_logical_bits": {
+        "mean": 110.25,
+        "half_width": 5.003586895236438,
+        "lower": 105.24641310476356,
+        "upper": 115.25358689523644,
+        "method": "normal mean interval"
+      },
+      "declared_slot_bound_bits": {
+        "mean": 110.25,
+        "half_width": 5.003586895236438,
+        "lower": 105.24641310476356,
+        "upper": 115.25358689523644,
+        "method": "normal mean interval"
+      },
+      "ledger_serialized_bytes": {
+        "mean": 1238.5,
+        "half_width": 30.02152137141863,
+        "lower": 1208.4784786285813,
+        "upper": 1268.5215213714187,
+        "method": "normal mean interval"
+      },
+      "quarantined_share": {
+        "mean": 0.0,
+        "half_width": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "method": "normal mean interval"
+      },
+      "detected_sensitive_share": {
+        "mean": 0.61,
+        "half_width": 0.049404191536894335,
+        "lower": 0.5605958084631056,
+        "upper": 0.6594041915368943,
+        "method": "normal mean interval"
+      },
+      "quarantined_without_detected_sensitivity": {
+        "mean": 0.0,
+        "half_width": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "method": "normal mean interval"
+      },
+      "seconds": {
+        "mean": 44.926819099979475,
+        "half_width": 0.7217707590417063,
+        "lower": 44.20504834093777,
+        "upper": 45.64858985902118,
+        "method": "normal mean interval"
+      },
+      "label_seconds": {
+        "mean": 0.0001220932399155572,
+        "half_width": 1.2283600414600277e-05,
+        "lower": 0.00010980963950095694,
+        "upper": 0.0001343768403301575,
+        "method": "normal mean interval"
+      },
+      "provider_seconds": {
+        "mean": 44.925689629988625,
+        "half_width": 0.7217048906356018,
+        "lower": 44.203984739353025,
+        "upper": 45.647394520624225,
+        "method": "normal mean interval"
+      },
+      "input_tokens": {
+        "mean": 11274.31,
+        "half_width": 208.72660608823577,
+        "lower": 11065.583393911764,
+        "upper": 11483.036606088235,
+        "method": "normal mean interval"
+      },
+      "output_tokens": {
+        "mean": 542.28,
+        "half_width": 5.044653393865868,
+        "lower": 537.2353466061342,
+        "upper": 547.3246533938658,
+        "method": "normal mean interval"
+      }
+    },
+    {
+      "condition": "SourceOnly",
+      "exact_task_leak": {
+        "mean": 0.05,
+        "half_width": 0.0451043019078873,
+        "lower": 0.02154336145631356,
+        "upper": 0.11175196527208817,
+        "method": "Wilson"
+      },
+      "fuzzy_task_leak": {
+        "mean": 0.05,
+        "half_width": 0.0451043019078873,
+        "lower": 0.02154336145631356,
+        "upper": 0.11175196527208817,
+        "method": "Wilson"
+      },
+      "utility": {
+        "mean": 0.88,
+        "half_width": 0.06406465318820297,
+        "lower": 0.8018773199709163,
+        "upper": 0.9300066263473222,
+        "method": "Wilson"
+      },
+      "secondary_utility": {
+        "mean": 0.88,
+        "half_width": 0.06406465318820297,
+        "lower": 0.8018773199709163,
+        "upper": 0.9300066263473222,
+        "method": "Wilson"
+      },
+      "audit_admission_correct": {
+        "mean": 1.0,
+        "half_width": 0.018497403738000955,
+        "lower": 0.9630051925239981,
+        "upper": 0.9999999999999999,
+        "method": "Wilson"
+      },
+      "audit_order_correct": {
+        "mean": 1.0,
+        "half_width": 0.018497403738000955,
+        "lower": 0.9630051925239981,
+        "upper": 0.9999999999999999,
+        "method": "Wilson"
+      },
+      "ledger_logical_bits": {
+        "mean": 111.25,
+        "half_width": 5.003586895236438,
+        "lower": 106.24641310476356,
+        "upper": 116.25358689523644,
+        "method": "normal mean interval"
+      },
+      "declared_slot_bound_bits": {
+        "mean": 111.25,
+        "half_width": 5.003586895236438,
+        "lower": 106.24641310476356,
+        "upper": 116.25358689523644,
+        "method": "normal mean interval"
+      },
+      "ledger_serialized_bytes": {
+        "mean": 1313.5,
+        "half_width": 30.02152137141863,
+        "lower": 1283.4784786285813,
+        "upper": 1343.5215213714187,
+        "method": "normal mean interval"
+      },
+      "quarantined_share": {
+        "mean": 0.0,
+        "half_width": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "method": "normal mean interval"
+      },
+      "detected_sensitive_share": {
+        "mean": 0.61,
+        "half_width": 0.049404191536894335,
+        "lower": 0.5605958084631056,
+        "upper": 0.6594041915368943,
+        "method": "normal mean interval"
+      },
+      "quarantined_without_detected_sensitivity": {
+        "mean": 0.0,
+        "half_width": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "method": "normal mean interval"
+      },
+      "seconds": {
+        "mean": 45.06600144042226,
+        "half_width": 0.7536479274645546,
+        "lower": 44.312353512957706,
+        "upper": 45.81964936788682,
+        "method": "normal mean interval"
+      },
+      "label_seconds": {
+        "mean": 0.000148031473509036,
+        "half_width": 1.2849770653348728e-05,
+        "lower": 0.00013518170285568729,
+        "upper": 0.00016088124416238473,
+        "method": "normal mean interval"
+      },
+      "provider_seconds": {
+        "mean": 45.06509274060663,
+        "half_width": 0.753639727467496,
+        "lower": 44.311453013139136,
+        "upper": 45.818732468074124,
+        "method": "normal mean interval"
+      },
+      "input_tokens": {
+        "mean": 11271.58,
+        "half_width": 208.73097579279343,
+        "lower": 11062.849024207206,
+        "upper": 11480.310975792794,
+        "method": "normal mean interval"
+      },
+      "output_tokens": {
+        "mean": 542.12,
+        "half_width": 5.021384936087218,
+        "lower": 537.0986150639128,
+        "upper": 547.1413849360872,
+        "method": "normal mean interval"
+      }
+    },
+    {
+      "condition": "DeleteAll",
+      "exact_task_leak": {
+        "mean": 0.0,
+        "half_width": 0.018497403738000955,
+        "lower": 0,
+        "upper": 0.03699480747600191,
+        "method": "Wilson"
+      },
+      "fuzzy_task_leak": {
+        "mean": 0.03,
+        "half_width": 0.037133221290306086,
+        "lower": 0.010254338223414816,
+        "upper": 0.08452078080402699,
+        "method": "Wilson"
+      },
+      "utility": {
+        "mean": 0.94,
+        "half_width": 0.04849197002278424,
+        "lower": 0.8752303146877748,
+        "upper": 0.9722142547333433,
+        "method": "Wilson"
+      },
+      "secondary_utility": {
+        "mean": 0.94,
+        "half_width": 0.04849197002278424,
+        "lower": 0.8752303146877748,
+        "upper": 0.9722142547333433,
+        "method": "Wilson"
+      },
+      "audit_admission_correct": {
+        "mean": 0.0,
+        "half_width": 0.018497403738000955,
+        "lower": 0,
+        "upper": 0.03699480747600191,
+        "method": "Wilson"
+      },
+      "audit_order_correct": {
+        "mean": 0.0,
+        "half_width": 0.018497403738000955,
+        "lower": 0,
+        "upper": 0.03699480747600191,
+        "method": "Wilson"
+      },
+      "ledger_logical_bits": {
+        "mean": 0.0,
+        "half_width": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "method": "normal mean interval"
+      },
+      "declared_slot_bound_bits": {
+        "mean": 111.25,
+        "half_width": 5.003586895236438,
+        "lower": 106.24641310476356,
+        "upper": 116.25358689523644,
+        "method": "normal mean interval"
+      },
+      "ledger_serialized_bytes": {
+        "mean": 0.0,
+        "half_width": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "method": "normal mean interval"
+      },
+      "quarantined_share": {
+        "mean": 0.0,
+        "half_width": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "method": "normal mean interval"
+      },
+      "detected_sensitive_share": {
+        "mean": 0.61,
+        "half_width": 0.049404191536894335,
+        "lower": 0.5605958084631056,
+        "upper": 0.6594041915368943,
+        "method": "normal mean interval"
+      },
+      "quarantined_without_detected_sensitivity": {
+        "mean": 0.0,
+        "half_width": 0.0,
+        "lower": 0.0,
+        "upper": 0.0,
+        "method": "normal mean interval"
+      },
+      "seconds": {
+        "mean": 48.27749275500944,
+        "half_width": 0.7587621476117111,
+        "lower": 47.51873060739773,
+        "upper": 49.03625490262115,
+        "method": "normal mean interval"
+      },
+      "label_seconds": {
+        "mean": 9.733642393257469e-05,
+        "half_width": 8.663825836705224e-06,
+        "lower": 8.867259809586947e-05,
+        "upper": 0.00010600024976927991,
+        "method": "normal mean interval"
+      },
+      "provider_seconds": {
+        "mean": 48.27674071915331,
+        "half_width": 0.7587473799584348,
+        "lower": 47.517993339194874,
+        "upper": 49.035488099111745,
+        "method": "normal mean interval"
+      },
+      "input_tokens": {
+        "mean": 6665.81,
+        "half_width": 152.09405768076675,
+        "lower": 6513.715942319233,
+        "upper": 6817.904057680767,
+        "method": "normal mean interval"
+      },
+      "output_tokens": {
+        "mean": 600.3,
+        "half_width": 8.309810709047591,
+        "lower": 591.9901892909523,
+        "upper": 608.6098107090476,
+        "method": "normal mean interval"
+      }
+    },
+    {
+      "condition": "CLR",
+      "exact_task_leak": {
+        "mean": 0.0,
+        "half_width": 0.018497403738000955,
+        "lower": 0,
+        "upper": 0.03699480747600191,
+        "method": "Wilson"
+      },
+      "fuzzy_task_leak": {
+        "mean": 0.06,
+        "half_width": 0.04849197002278422,
+        "lower": 0.02778574526665662,
+        "upper": 0.12476968531222507,
+        "method": "Wilson"
+      },
+      "utility": {
+        "mean": 0.93,
+        "half_width": 0.051588942850616715,
+        "lower": 0.8625032899347025,
+        "upper": 0.965681175635936,
+        "method": "Wilson"
+      },
+      "secondary_utility": {
+        "mean": 0.93,
+        "half_width": 0.051588942850616715,
+        "lower": 0.8625032899347025,
+        "upper": 0.965681175635936,
+        "method": "Wilson"
+      },
+      "audit_admission_correct": {
+        "mean": 1.0,
+        "half_width": 0.018497403738000955,
+        "lower": 0.9630051925239981,
+        "upper": 0.9999999999999999,
+        "method": "Wilson"
+      },
+      "audit_order_correct": {
+        "mean": 1.0,
+        "half_width": 0.018497403738000955,
+        "lower": 0.9630051925239981,
+        "upper": 0.9999999999999999,
+        "method": "Wilson"
+      },
+      "ledger_logical_bits": {
+        "mean": 111.25,
+        "half_width": 5.003586895236438,
+        "lower": 106.24641310476356,
+        "upper": 116.25358689523644,
+        "method": "normal mean interval"
+      },
+      "declared_slot_bound_bits": {
+        "mean": 111.25,
+        "half_width": 5.003586895236438,
+        "lower": 106.24641310476356,
+        "upper": 116.25358689523644,
+        "method": "normal mean interval"
+      },
+      "ledger_serialized_bytes": {
+        "mean": 1235.5,
+        "half_width": 30.02152137141863,
+        "lower": 1205.4784786285813,
+        "upper": 1265.5215213714187,
+        "method": "normal mean interval"
+      },
+      "quarantined_share": {
+        "mean": 1.0,
+        "half_width": 0.0,
+        "lower": 1.0,
+        "upper": 1.0,
+        "method": "normal mean interval"
+      },
+      "detected_sensitive_share": {
+        "mean": 0.61,
+        "half_width": 0.049404191536894335,
+        "lower": 0.5605958084631056,
+        "upper": 0.6594041915368943,
+        "method": "normal mean interval"
+      },
+      "quarantined_without_detected_sensitivity": {
+        "mean": 0.39,
+        "half_width": 0.049404191536894335,
+        "lower": 0.34059580846310566,
+        "upper": 0.43940419153689436,
+        "method": "normal mean interval"
+      },
+      "seconds": {
+        "mean": 50.914707886672694,
+        "half_width": 0.7460468728255558,
+        "lower": 50.168661013847135,
+        "upper": 51.66075475949825,
+        "method": "normal mean interval"
+      },
+      "label_seconds": {
+        "mean": 0.00010430183494463562,
+        "half_width": 1.1937419725014225e-05,
+        "lower": 9.23644152196214e-05,
+        "upper": 0.00011623925466964985,
+        "method": "normal mean interval"
+      },
+      "provider_seconds": {
+        "mean": 50.91374645863601,
+        "half_width": 0.7460344760000421,
+        "lower": 50.16771198263597,
+        "upper": 51.65978093463605,
+        "method": "normal mean interval"
+      },
+      "input_tokens": {
+        "mean": 7089.03,
+        "half_width": 144.2047406345589,
+        "lower": 6944.825259365441,
+        "upper": 7233.234740634559,
+        "method": "normal mean interval"
+      },
+      "output_tokens": {
+        "mean": 636.15,
+        "half_width": 5.347500769971752,
+        "lower": 630.8024992300283,
+        "upper": 641.4975007699717,
+        "method": "normal mean interval"
+      }
+    },
+    {
+      "condition": "CLR+Reconstruct",
+      "exact_task_leak": {
+        "mean": 0.0,
+        "half_width": 0.018497403738000955,
+        "lower": 0,
+        "upper": 0.03699480747600191,
+        "method": "Wilson"
+      },
+      "fuzzy_task_leak": {
+        "mean": 0.04,
+        "half_width": 0.04135456088711286,
+        "lower": 0.015663050551848016,
+        "upper": 0.09837217232607373,
+        "method": "Wilson"
+      },
+      "utility": {
+        "mean": 0.96,
+        "half_width": 0.04135456088711288,
+        "lower": 0.9016278276739262,
+        "upper": 0.984336949448152,
+        "method": "Wilson"
+      },
+      "secondary_utility": {
+        "mean": 0.96,
+        "half_width": 0.04135456088711288,
+        "lower": 0.9016278276739262,
+        "upper": 0.984336949448152,
+        "method": "Wilson"
+      },
+      "audit_admission_correct": {
+        "mean": 1.0,
+        "half_width": 0.018497403738000955,
+        "lower": 0.9630051925239981,
+        "upper": 0.9999999999999999,
+        "method": "Wilson"
+      },
+      "audit_order_correct": {
+        "mean": 1.0,
+        "half_width": 0.018497403738000955,
+        "lower": 0.9630051925239981,
+        "upper": 0.9999999999999999,
+        "method": "Wilson"
+      },
+      "ledger_logical_bits": {
+        "mean": 125.95,
+        "half_width": 5.670731814601297,
+        "lower": 120.2792681853987,
+        "upper": 131.6207318146013,
+        "method": "normal mean interval"
+      },
+      "declared_slot_bound_bits": {
+        "mean": 125.95,
+        "half_width": 5.670731814601297,
+        "lower": 120.2792681853987,
+        "upper": 131.6207318146013,
+        "method": "normal mean interval"
+      },
+      "ledger_serialized_bytes": {
+        "mean": 1404.7,
+        "half_width": 34.02439088760778,
+        "lower": 1370.6756091123923,
+        "upper": 1438.7243908876078,
+        "method": "normal mean interval"
+      },
+      "quarantined_share": {
+        "mean": 1.0,
+        "half_width": 0.0,
+        "lower": 1.0,
+        "upper": 1.0,
+        "method": "normal mean interval"
+      },
+      "detected_sensitive_share": {
+        "mean": 0.61,
+        "half_width": 0.049404191536894335,
+        "lower": 0.5605958084631056,
+        "upper": 0.6594041915368943,
+        "method": "normal mean interval"
+      },
+      "quarantined_without_detected_sensitivity": {
+        "mean": 0.39,
+        "half_width": 0.049404191536894335,
+        "lower": 0.34059580846310566,
+        "upper": 0.43940419153689436,
+        "method": "normal mean interval"
+      },
+      "seconds": {
+        "mean": 61.8534714241646,
+        "half_width": 1.092886785159233,
+        "lower": 60.76058463900537,
+        "upper": 62.94635820932383,
+        "method": "normal mean interval"
+      },
+      "label_seconds": {
+        "mean": 0.0001283848739694804,
+        "half_width": 1.1799098748224844e-05,
+        "lower": 0.00011658577522125554,
+        "upper": 0.00014018397271770523,
+        "method": "normal mean interval"
+      },
+      "provider_seconds": {
+        "mean": 61.85239870020188,
+        "half_width": 1.0928582961803932,
+        "lower": 60.759540404021486,
+        "upper": 62.94525699638228,
+        "method": "normal mean interval"
+      },
+      "input_tokens": {
+        "mean": 11739.38,
+        "half_width": 290.7981359504426,
+        "lower": 11448.581864049556,
+        "upper": 12030.178135950442,
+        "method": "normal mean interval"
+      },
+      "output_tokens": {
+        "mean": 756.02,
+        "half_width": 9.011823380426405,
+        "lower": 747.0081766195735,
+        "upper": 765.0318233804264,
+        "method": "normal mean interval"
+      }
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "condition": "SourceOnly",
+      "endpoint": "utility",
+      "tasks": 100,
+      "wins": 0,
+      "losses": 6,
+      "both_success": 88,
+      "both_failure": 6,
+      "difference": -0.06,
+      "lower": -0.1363531924117785,
+      "upper": 0.023810848939653864,
+      "mcnemar_exact_p": 0.03125,
+      "interval_method": "Bonferroni simultaneous exact Clopper-Pearson discordant-cell intervals; at least 95% pointwise coverage",
+      "holm_p": 0.25
+    },
+    {
+      "condition": "SourceOnly",
+      "endpoint": "secondary_utility",
+      "tasks": 100,
+      "wins": 0,
+      "losses": 6,
+      "both_success": 88,
+      "both_failure": 6,
+      "difference": -0.06,
+      "lower": -0.1363531924117785,
+      "upper": 0.023810848939653864,
+      "mcnemar_exact_p": 0.03125,
+      "interval_method": "Bonferroni simultaneous exact Clopper-Pearson discordant-cell intervals; at least 95% pointwise coverage",
+      "holm_p": 0.25
+    },
+    {
+      "condition": "DeleteAll",
+      "endpoint": "utility",
+      "tasks": 100,
+      "wins": 3,
+      "losses": 3,
+      "both_success": 91,
+      "both_failure": 3,
+      "difference": 0.0,
+      "lower": -0.08938385368040619,
+      "upper": 0.08938385368040619,
+      "mcnemar_exact_p": 1.0,
+      "interval_method": "Bonferroni simultaneous exact Clopper-Pearson discordant-cell intervals; at least 95% pointwise coverage",
+      "holm_p": 1.0
+    },
+    {
+      "condition": "DeleteAll",
+      "endpoint": "secondary_utility",
+      "tasks": 100,
+      "wins": 3,
+      "losses": 3,
+      "both_success": 91,
+      "both_failure": 3,
+      "difference": 0.0,
+      "lower": -0.08938385368040619,
+      "upper": 0.08938385368040619,
+      "mcnemar_exact_p": 1.0,
+      "interval_method": "Bonferroni simultaneous exact Clopper-Pearson discordant-cell intervals; at least 95% pointwise coverage",
+      "holm_p": 1.0
+    },
+    {
+      "condition": "CLR",
+      "endpoint": "utility",
+      "tasks": 100,
+      "wins": 5,
+      "losses": 6,
+      "both_success": 88,
+      "both_failure": 1,
+      "difference": -0.01,
+      "lower": -0.12263409544109358,
+      "upper": 0.10370322754018853,
+      "mcnemar_exact_p": 1.0,
+      "interval_method": "Bonferroni simultaneous exact Clopper-Pearson discordant-cell intervals; at least 95% pointwise coverage",
+      "holm_p": 1.0
+    },
+    {
+      "condition": "CLR",
+      "endpoint": "secondary_utility",
+      "tasks": 100,
+      "wins": 5,
+      "losses": 6,
+      "both_success": 88,
+      "both_failure": 1,
+      "difference": -0.01,
+      "lower": -0.12263409544109358,
+      "upper": 0.10370322754018853,
+      "mcnemar_exact_p": 1.0,
+      "interval_method": "Bonferroni simultaneous exact Clopper-Pearson discordant-cell intervals; at least 95% pointwise coverage",
+      "holm_p": 1.0
+    },
+    {
+      "condition": "CLR+Reconstruct",
+      "endpoint": "utility",
+      "tasks": 100,
+      "wins": 4,
+      "losses": 2,
+      "both_success": 92,
+      "both_failure": 2,
+      "difference": 0.02,
+      "lower": -0.06987923514154845,
+      "upper": 0.10706954260030455,
+      "mcnemar_exact_p": 0.6875,
+      "interval_method": "Bonferroni simultaneous exact Clopper-Pearson discordant-cell intervals; at least 95% pointwise coverage",
+      "holm_p": 1.0
+    },
+    {
+      "condition": "CLR+Reconstruct",
+      "endpoint": "secondary_utility",
+      "tasks": 100,
+      "wins": 4,
+      "losses": 2,
+      "both_success": 92,
+      "both_failure": 2,
+      "difference": 0.02,
+      "lower": -0.06987923514154845,
+      "upper": 0.10706954260030455,
+      "mcnemar_exact_p": 0.6875,
+      "interval_method": "Bonferroni simultaneous exact Clopper-Pearson discordant-cell intervals; at least 95% pointwise coverage",
+      "holm_p": 1.0
+    }
+  ],
+  "sample_decision": {
+    "tasks": 100,
+    "task_indices": "seed-order prefix starting at 0",
+    "warmup_tasks": 5,
+    "warmup_wall_seconds": [
+      165.0758388750255,
+      224.29883945803158,
+      245.00206195900682,
+      266.3567379580345,
+      259.40809266699944
+    ],
+    "projected_200_seconds": 46405.662836683914,
+    "threshold_seconds": 36000,
+    "rule": "200 if projected_200_seconds <=36000, else first100",
+    "decision_utc": "2026-10-18T17:14:01.684714+00:00",
+    "secondary_timing_eligibility": false,
+    "warmup_outputs_discarded": true,
+    "signature": {
+      "model": "qwen2.5:7b",
+      "provider": "ollama",
+      "protocol": {
+        "preregistration_sha256": "96a03cf67f5911d56b3a0bb56ae2c1f8d6068c8963044a08afc0277927f87160",
+        "protocol_sha256": "26ad376ff729583020b43c6e39433d1458510c0be088d863cecbb552c16278e1",
+        "files": {
+          "experiments/agent/run_agent_v6_2.py": "570af15607a77230d01343c67852d2f2ca9415ea81dc465284d0f9932ad6982c",
+          "experiments/agent/paired_statistics.py": "ddd5fe5a4a545ec5f3a5b829ec828dcd2361163fe282bb0993ff3966d2ce4786",
+          "experiments/agent/run_agent_experiment.py": "714632c99910cacdb135fe95a7773235c050e98652f3a9ad7b11add96f93b238",
+          "src/apr/agent/prototype.py": "290990ef844857b1fd2a6fb2eda9939752e56eae1c3b96e946b53b5337ca1c6a",
+          "experiments/seeds.json": "47e2a2fcd9ed9a1f5b3923e202ea98d5726415e55c5e8cc3f50a81f23db23831",
+          "experiments/agent/PREREGISTRATION_6_2.md": "96a03cf67f5911d56b3a0bb56ae2c1f8d6068c8963044a08afc0277927f87160"
+        }
+      },
+      "runtime": {
+        "model_digest": "845dbda0ea48ed749caafd9e6037047aa19acfcfd82e704d7ca97d631a0b697e",
+        "server_version": "0.40.6"
+      }
+    }
+  },
+  "protocol": {
+    "preregistration_sha256": "96a03cf67f5911d56b3a0bb56ae2c1f8d6068c8963044a08afc0277927f87160",
+    "protocol_sha256": "26ad376ff729583020b43c6e39433d1458510c0be088d863cecbb552c16278e1",
+    "files": {
+      "experiments/agent/run_agent_v6_2.py": "570af15607a77230d01343c67852d2f2ca9415ea81dc465284d0f9932ad6982c",
+      "experiments/agent/paired_statistics.py": "ddd5fe5a4a545ec5f3a5b829ec828dcd2361163fe282bb0993ff3966d2ce4786",
+      "experiments/agent/run_agent_experiment.py": "714632c99910cacdb135fe95a7773235c050e98652f3a9ad7b11add96f93b238",
+      "src/apr/agent/prototype.py": "290990ef844857b1fd2a6fb2eda9939752e56eae1c3b96e946b53b5337ca1c6a",
+      "experiments/seeds.json": "47e2a2fcd9ed9a1f5b3923e202ea98d5726415e55c5e8cc3f50a81f23db23831",
+      "experiments/agent/PREREGISTRATION_6_2.md": "96a03cf67f5911d56b3a0bb56ae2c1f8d6068c8963044a08afc0277927f87160"
+    }
+  },
+  "baseline_instability_items": 2,
+  "raw_model_calls": 8100,
+  "sum_task_wall_seconds": 27587.48538487911,
+  "aggregation_invocation_seconds": 27589.069193915988,
+  "runtime_identity": {
+    "model_info_file": "model_information.json",
+    "manifest_file": "model_manifest.json"
+  },
+  "metadata": {
+    "timestamp_utc": "2026-10-19T00:53:51.005934+00:00",
+    "git_commit": "8751aabb970bb5d6dafd3d85dfa85bf411313d76",
+    "git_dirty": true,
+    "source_sha256": "1c5e43a16cd69ff046cee4c807574b489ffaa234845c2b63ee6d316e12152758",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "configuration": null,
+    "inputs": {
+      "model": "qwen2.5:7b",
+      "provider": "ollama",
+      "tasks": 100,
+      "sample_rule": "200 if five-task projection <=10h, else first100",
+      "preregistration_sha256": "96a03cf67f5911d56b3a0bb56ae2c1f8d6068c8963044a08afc0277927f87160",
+      "protocol_sha256": "26ad376ff729583020b43c6e39433d1458510c0be088d863cecbb552c16278e1"
+    },
+    "seed": 610018,
+    "experiment": "agent_revision6_2"
+  }
+}

@@ -1,0 +1,73 @@
+TLC2 Version 2026.10.15.145915 (rev: 932d35e)
+Running breadth-first search Model-Checking with fp 99 and seed 2674128193620943346 with 1 worker on 10 cores with 1820MB heap and 64MB offheap memory [pid: 94269] (Mac OS X 27.0.1 aarch64, Eclipse Adoptium 21.0.12.1 64bit, MSBDiskFPSet, DiskStateQueue).
+Parsing file /private/var/folders/2m/wmshwvrn3v95h02bt80fnhh00000gn/T/tlc_ly5g5o3t/APRProduct.tla
+Parsing file /private/var/folders/2m/wmshwvrn3v95h02bt80fnhh00000gn/T/tlc_ly5g5o3t/APRSemantics.tla
+Parsing file /private/var/folders/2m/wmshwvrn3v95h02bt80fnhh00000gn/T/tlc-7623701792344755405/Integers.tla (jar:file:/workspace/work/tla2tools.jar!/tla2sany/StandardModules/Integers.tla)
+Parsing file /private/var/folders/2m/wmshwvrn3v95h02bt80fnhh00000gn/T/tlc-7623701792344755405/_TLCTrace.tla (jar:file:/workspace/work/tla2tools.jar!/tla2sany/StandardModules/_TLCTrace.tla)
+Parsing file /private/var/folders/2m/wmshwvrn3v95h02bt80fnhh00000gn/T/tlc-7623701792344755405/Naturals.tla (jar:file:/workspace/work/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Parsing file /private/var/folders/2m/wmshwvrn3v95h02bt80fnhh00000gn/T/tlc-7623701792344755405/TLC.tla (jar:file:/workspace/work/tla2tools.jar!/tla2sany/StandardModules/TLC.tla)
+Parsing file /private/var/folders/2m/wmshwvrn3v95h02bt80fnhh00000gn/T/tlc-7623701792344755405/TLCExt.tla (jar:file:/workspace/work/tla2tools.jar!/tla2sany/StandardModules/TLCExt.tla)
+Parsing file /private/var/folders/2m/wmshwvrn3v95h02bt80fnhh00000gn/T/tlc-7623701792344755405/Sequences.tla (jar:file:/workspace/work/tla2tools.jar!/tla2sany/StandardModules/Sequences.tla)
+Parsing file /private/var/folders/2m/wmshwvrn3v95h02bt80fnhh00000gn/T/tlc-7623701792344755405/FiniteSets.tla (jar:file:/workspace/work/tla2tools.jar!/tla2sany/StandardModules/FiniteSets.tla)
+Semantic processing of module Naturals
+Semantic processing of module APRSemantics
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module TLCExt
+Semantic processing of module _TLCTrace
+Semantic processing of module APRProduct
+Linting of module APRSemantics
+Linting of module TLCExt
+Linting of module _TLCTrace
+Linting of module APRProduct
+Starting... (2026-10-18 17:35:20)
+Computing initial states...
+Finished computing initial states: 1 distinct state generated at 2026-10-18 17:35:21.
+Error: Action property PayloadEqual is violated.
+Error: The behavior up to this point is:
+State 1: <Initial predicate>
+/\ sl = [ secret |-> 2,
+  read |-> <<FALSE, FALSE, FALSE>>,
+  derived |-> <<FALSE, FALSE, FALSE>>,
+  loaded |-> <<FALSE, FALSE, FALSE>>,
+  cache |-> <<FALSE, FALSE, FALSE>>,
+  reqRevoke |-> FALSE,
+  polUpd |-> FALSE,
+  isolated |-> FALSE,
+  fenced |-> FALSE,
+  persisted |-> FALSE,
+[compacted] ... violation traces elided ...
+[compacted] 1 x Error: Action property PayloadEqual is violated.
+[compacted] 1 x Error: The behavior up to this point is:
+  loaded |-> <<TRUE, FALSE, FALSE>>,
+  cache |-> <<TRUE, FALSE, FALSE>>,
+  reqRevoke |-> TRUE,
+  polUpd |-> TRUE,
+  isolated |-> TRUE,
+  fenced |-> TRUE,
+  persisted |-> TRUE,
+  committed |-> TRUE,
+  effPrep |-> FALSE,
+  effFired |-> FALSE,
+  grantRev |-> FALSE,
+  revOpen |-> FALSE,
+  repGen |-> FALSE,
+  answered |-> FALSE,
+  exported |-> FALSE,
+  released |-> FALSE,
+  relDelayed |-> FALSE,
+  deliberated |-> FALSE,
+  pubRecon |-> FALSE,
+  evDeleted |-> FALSE,
+  opUses |-> 1,
+  uInfo |-> TRUE,
+  uAuth |-> FALSE ]
+/\ lag = 0
+
+1623 states generated, 755 distinct states found, 219 states left on queue.
+The depth of the complete state graph search is 11.
+Finished in 01s at (2026-10-18 17:35:21)
+Trace exploration spec path: ./APRProduct_TTrace_1792326920.tla
+

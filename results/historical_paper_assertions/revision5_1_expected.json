@@ -1,0 +1,571 @@
+{
+ "bounds": [
+  {
+   "admission_bits": 1,
+   "admission_classes_max": 2,
+   "enforcement_order_bits": 1,
+   "enforcement_order_classes_max": 2,
+   "family_bits": 3,
+   "family_classes_max": 8,
+   "final_state_bits": 2,
+   "final_state_classes_max": 3,
+   "full_ex_post_bits": 6,
+   "full_ex_post_classes_max": 45,
+   "max_fiber_histories": 45,
+   "operational_view_fibers": 8,
+   "pre_cut_histories": 125,
+   "sources": 1
+  },
+  {
+   "admission_bits": 2,
+   "admission_classes_max": 4,
+   "enforcement_order_bits": 1,
+   "enforcement_order_classes_max": 2,
+   "family_bits": 5,
+   "family_classes_max": 28,
+   "final_state_bits": 3,
+   "final_state_classes_max": 7,
+   "full_ex_post_bits": 12,
+   "full_ex_post_classes_max": 2655,
+   "max_fiber_histories": 2655,
+   "operational_view_fibers": 43,
+   "pre_cut_histories": 23120,
+   "sources": 2
+  },
+  {
+   "admission_bits": 3,
+   "admission_classes_max": 8,
+   "enforcement_order_bits": 1,
+   "enforcement_order_classes_max": 2,
+   "family_bits": 7,
+   "family_classes_max": 92,
+   "final_state_bits": 4,
+   "final_state_classes_max": 15,
+   "full_ex_post_bits": 19,
+   "full_ex_post_classes_max": 296112,
+   "max_fiber_histories": 296112,
+   "operational_view_fibers": 244,
+   "pre_cut_histories": 8878433,
+   "sources": 3
+  }
+ ],
+ "model": {
+  "DeleteEvidence/K1": {
+   "authorization_safety": "holds",
+   "information_safety": "holds",
+   "payload_only": "equal",
+   "product_states": 299,
+   "product_transitions": 652,
+   "review_failures": 520,
+   "state_count_s0": 299,
+   "state_count_s1": 299,
+   "synchronous_observations": "equal",
+   "transitions_s0": 652,
+   "witness_length": null
+  },
+  "DeleteEvidence/K2": {
+   "authorization_safety": "holds",
+   "information_safety": "holds",
+   "payload_only": "equal",
+   "product_states": 1165,
+   "product_transitions": 2616,
+   "review_failures": 1976,
+   "state_count_s0": 1165,
+   "state_count_s1": 1165,
+   "synchronous_observations": "equal",
+   "transitions_s0": 2616,
+   "witness_length": null
+  },
+  "DeleteEvidence/K3": {
+   "authorization_safety": "holds",
+   "information_safety": "holds",
+   "payload_only": "equal",
+   "product_states": 4127,
+   "product_transitions": 9696,
+   "review_failures": 6760,
+   "state_count_s0": 4127,
+   "state_count_s1": 4127,
+   "synchronous_observations": "equal",
+   "transitions_s0": 9696,
+   "witness_length": null
+  },
+  "DeleteEvidence/K4": {
+   "authorization_safety": "holds",
+   "information_safety": "holds",
+   "payload_only": "equal",
+   "product_states": 14029,
+   "product_transitions": 35196,
+   "review_failures": 21944,
+   "state_count_s0": 14029,
+   "state_count_s1": 14029,
+   "synchronous_observations": "equal",
+   "transitions_s0": 35196,
+   "witness_length": null
+  },
+  "Governed/K1": {
+   "authorization_safety": "holds",
+   "information_safety": "holds",
+   "payload_only": "equal",
+   "product_states": 439,
+   "product_transitions": 1082,
+   "review_failures": 0,
+   "state_count_s0": 439,
+   "state_count_s1": 439,
+   "synchronous_observations": "equal",
+   "transitions_s0": 1082,
+   "witness_length": null
+  },
+  "Governed/K2": {
+   "authorization_safety": "holds",
+   "information_safety": "holds",
+   "payload_only": "equal",
+   "product_states": 1697,
+   "product_transitions": 4250,
+   "review_failures": 0,
+   "state_count_s0": 1697,
+   "state_count_s1": 1697,
+   "synchronous_observations": "equal",
+   "transitions_s0": 4250,
+   "witness_length": null
+  },
+  "Governed/K3": {
+   "authorization_safety": "holds",
+   "information_safety": "holds",
+   "payload_only": "equal",
+   "product_states": 5947,
+   "product_transitions": 15286,
+   "review_failures": 0,
+   "state_count_s0": 5947,
+   "state_count_s1": 5947,
+   "synchronous_observations": "equal",
+   "transitions_s0": 15286,
+   "witness_length": null
+  },
+  "Governed/K4": {
+   "authorization_safety": "holds",
+   "information_safety": "holds",
+   "payload_only": "equal",
+   "product_states": 19937,
+   "product_transitions": 53342,
+   "review_failures": 0,
+   "state_count_s0": 19937,
+   "state_count_s1": 19937,
+   "synchronous_observations": "equal",
+   "transitions_s0": 53342,
+   "witness_length": null
+  },
+  "IgnoreGrantChecks/K1": {
+   "authorization_safety": "violated",
+   "information_safety": "holds",
+   "payload_only": "equal",
+   "product_states": 519,
+   "product_transitions": 1292,
+   "review_failures": 0,
+   "state_count_s0": 519,
+   "state_count_s1": 519,
+   "synchronous_observations": "equal",
+   "transitions_s0": 1292,
+   "witness_length": null
+  },
+  "IgnoreGrantChecks/K2": {
+   "authorization_safety": "violated",
+   "information_safety": "holds",
+   "payload_only": "equal",
+   "product_states": 2001,
+   "product_transitions": 5048,
+   "review_failures": 0,
+   "state_count_s0": 2001,
+   "state_count_s1": 2001,
+   "synchronous_observations": "equal",
+   "transitions_s0": 5048,
+   "witness_length": null
+  },
+  "IgnoreGrantChecks/K3": {
+   "authorization_safety": "violated",
+   "information_safety": "holds",
+   "payload_only": "equal",
+   "product_states": 6987,
+   "product_transitions": 18016,
+   "review_failures": 0,
+   "state_count_s0": 6987,
+   "state_count_s1": 6987,
+   "synchronous_observations": "equal",
+   "transitions_s0": 18016,
+   "witness_length": null
+  },
+  "IgnoreGrantChecks/K4": {
+   "authorization_safety": "violated",
+   "information_safety": "holds",
+   "payload_only": "equal",
+   "product_states": 23313,
+   "product_transitions": 62204,
+   "review_failures": 0,
+   "state_count_s0": 23313,
+   "state_count_s1": 23313,
+   "synchronous_observations": "equal",
+   "transitions_s0": 62204,
+   "witness_length": null
+  },
+  "IgnoreInfoChecks/K1": {
+   "authorization_safety": "holds",
+   "information_safety": "violated",
+   "payload_only": "differ",
+   "product_states": 904,
+   "product_transitions": 2722,
+   "review_failures": 0,
+   "state_count_s0": 904,
+   "state_count_s1": 904,
+   "synchronous_observations": "differ",
+   "transitions_s0": 2722,
+   "witness_length": 10
+  },
+  "IgnoreInfoChecks/K2": {
+   "authorization_safety": "holds",
+   "information_safety": "violated",
+   "payload_only": "differ",
+   "product_states": 4808,
+   "product_transitions": 18275,
+   "review_failures": 0,
+   "state_count_s0": 4808,
+   "state_count_s1": 4808,
+   "synchronous_observations": "differ",
+   "transitions_s0": 18275,
+   "witness_length": 10
+  },
+  "IgnoreInfoChecks/K3": {
+   "authorization_safety": "holds",
+   "information_safety": "violated",
+   "payload_only": "differ",
+   "product_states": 21856,
+   "product_transitions": 100509,
+   "review_failures": 0,
+   "state_count_s0": 21856,
+   "state_count_s1": 21856,
+   "synchronous_observations": "differ",
+   "transitions_s0": 100509,
+   "witness_length": 10
+  },
+  "IgnoreInfoChecks/K4": {
+   "authorization_safety": "holds",
+   "information_safety": "violated",
+   "payload_only": "differ",
+   "product_states": 93392,
+   "product_transitions": 503295,
+   "review_failures": 0,
+   "state_count_s0": 93392,
+   "state_count_s1": 93392,
+   "synchronous_observations": "differ",
+   "transitions_s0": 503295,
+   "witness_length": 10
+  },
+  "SourceOnly/K1": {
+   "authorization_safety": "holds",
+   "information_safety": "violated",
+   "payload_only": "differ",
+   "product_states": 594,
+   "product_transitions": 1506,
+   "review_failures": 0,
+   "state_count_s0": 594,
+   "state_count_s1": 594,
+   "synchronous_observations": "differ",
+   "transitions_s0": 1506,
+   "witness_length": 10
+  },
+  "SourceOnly/K2": {
+   "authorization_safety": "holds",
+   "information_safety": "violated",
+   "payload_only": "differ",
+   "product_states": 2778,
+   "product_transitions": 7328,
+   "review_failures": 0,
+   "state_count_s0": 2778,
+   "state_count_s1": 2778,
+   "synchronous_observations": "differ",
+   "transitions_s0": 7328,
+   "witness_length": 10
+  },
+  "SourceOnly/K3": {
+   "authorization_safety": "holds",
+   "information_safety": "violated",
+   "payload_only": "differ",
+   "product_states": 11646,
+   "product_transitions": 31964,
+   "review_failures": 0,
+   "state_count_s0": 11646,
+   "state_count_s1": 11646,
+   "synchronous_observations": "differ",
+   "transitions_s0": 31964,
+   "witness_length": 10
+  },
+  "SourceOnly/K4": {
+   "authorization_safety": "holds",
+   "information_safety": "violated",
+   "payload_only": "differ",
+   "product_states": 46842,
+   "product_transitions": 133592,
+   "review_failures": 0,
+   "state_count_s0": 46842,
+   "state_count_s1": 46842,
+   "synchronous_observations": "differ",
+   "transitions_s0": 133592,
+   "witness_length": 10
+  },
+  "TimedRelease/K1": {
+   "authorization_safety": "holds",
+   "information_safety": "holds",
+   "payload_only": "equal",
+   "product_states": 559,
+   "product_transitions": 1442,
+   "review_failures": 0,
+   "state_count_s0": 439,
+   "state_count_s1": 559,
+   "synchronous_observations": "differ",
+   "transitions_s0": 1082,
+   "witness_length": 8
+  },
+  "TimedRelease/K2": {
+   "authorization_safety": "holds",
+   "information_safety": "holds",
+   "payload_only": "equal",
+   "product_states": 2153,
+   "product_transitions": 5618,
+   "review_failures": 0,
+   "state_count_s0": 1697,
+   "state_count_s1": 2153,
+   "synchronous_observations": "differ",
+   "transitions_s0": 4250,
+   "witness_length": 8
+  },
+  "TimedRelease/K3": {
+   "authorization_safety": "holds",
+   "information_safety": "holds",
+   "payload_only": "equal",
+   "product_states": 7507,
+   "product_transitions": 19966,
+   "review_failures": 0,
+   "state_count_s0": 5947,
+   "state_count_s1": 7507,
+   "synchronous_observations": "differ",
+   "transitions_s0": 15286,
+   "witness_length": 8
+  },
+  "TimedRelease/K4": {
+   "authorization_safety": "holds",
+   "information_safety": "holds",
+   "payload_only": "equal",
+   "product_states": 25001,
+   "product_transitions": 68534,
+   "review_failures": 0,
+   "state_count_s0": 19937,
+   "state_count_s1": 25001,
+   "synchronous_observations": "differ",
+   "transitions_s0": 53342,
+   "witness_length": 8
+  },
+  "UnguardedExport/K1": {
+   "authorization_safety": "holds",
+   "information_safety": "violated",
+   "payload_only": "differ",
+   "product_states": 379,
+   "product_transitions": 822,
+   "review_failures": 0,
+   "state_count_s0": 379,
+   "state_count_s1": 379,
+   "synchronous_observations": "differ",
+   "transitions_s0": 822,
+   "witness_length": 11
+  },
+  "UnguardedExport/K2": {
+   "authorization_safety": "holds",
+   "information_safety": "violated",
+   "payload_only": "differ",
+   "product_states": 1469,
+   "product_transitions": 3262,
+   "review_failures": 0,
+   "state_count_s0": 1469,
+   "state_count_s1": 1469,
+   "synchronous_observations": "differ",
+   "transitions_s0": 3262,
+   "witness_length": 11
+  },
+  "UnguardedExport/K3": {
+   "authorization_safety": "holds",
+   "information_safety": "violated",
+   "payload_only": "differ",
+   "product_states": 5167,
+   "product_transitions": 11906,
+   "review_failures": 0,
+   "state_count_s0": 5167,
+   "state_count_s1": 5167,
+   "synchronous_observations": "differ",
+   "transitions_s0": 11906,
+   "witness_length": 11
+  },
+  "UnguardedExport/K4": {
+   "authorization_safety": "holds",
+   "information_safety": "violated",
+   "payload_only": "differ",
+   "product_states": 17405,
+   "product_transitions": 42370,
+   "review_failures": 0,
+   "state_count_s0": 17405,
+   "state_count_s1": 17405,
+   "synchronous_observations": "differ",
+   "transitions_s0": 42370,
+   "witness_length": 11
+  }
+ },
+ "quarantine": {
+  "0.1": 0.38877,
+  "0.25": 0.38877,
+  "0.5": 0.38877,
+  "0.75": 0.38877,
+  "1.0": 0.38877
+ },
+ "sufficiency": {
+  "K1/admission_ledger/admission": [
+   "sufficient",
+   1152
+  ],
+  "K1/admission_ledger/causal": [
+   "insufficient",
+   2729
+  ],
+  "K1/admission_ledger/order": [
+   "insufficient",
+   1453
+  ],
+  "K1/full_mediator_log/admission": [
+   "sufficient",
+   48
+  ],
+  "K1/full_mediator_log/causal": [
+   "insufficient",
+   108
+  ],
+  "K1/full_mediator_log/order": [
+   "sufficient",
+   59
+  ],
+  "K1/receipts/admission": [
+   "insufficient",
+   129
+  ],
+  "K1/receipts/causal": [
+   "insufficient",
+   183
+  ],
+  "K1/receipts/order": [
+   "sufficient",
+   149
+  ],
+  "K1/receipts_plus_admission_ledger/admission": [
+   "sufficient",
+   96
+  ],
+  "K1/receipts_plus_admission_ledger/causal": [
+   "insufficient",
+   156
+  ],
+  "K1/receipts_plus_admission_ledger/order": [
+   "sufficient",
+   125
+  ],
+  "K2/admission_ledger/admission": [
+   "sufficient",
+   16128
+  ],
+  "K2/admission_ledger/causal": [
+   "insufficient",
+   40575
+  ],
+  "K2/admission_ledger/order": [
+   "insufficient",
+   11510
+  ],
+  "K2/full_mediator_log/admission": [
+   "sufficient",
+   240
+  ],
+  "K2/full_mediator_log/causal": [
+   "insufficient",
+   525
+  ],
+  "K2/full_mediator_log/order": [
+   "sufficient",
+   253
+  ],
+  "K2/receipts/admission": [
+   "insufficient",
+   1319
+  ],
+  "K2/receipts/causal": [
+   "insufficient",
+   2165
+  ],
+  "K2/receipts/order": [
+   "sufficient",
+   2333
+  ],
+  "K2/receipts_plus_admission_ledger/admission": [
+   "sufficient",
+   1104
+  ],
+  "K2/receipts_plus_admission_ledger/causal": [
+   "insufficient",
+   1770
+  ],
+  "K2/receipts_plus_admission_ledger/order": [
+   "sufficient",
+   1357
+  ],
+  "K3/admission_ledger/admission": [
+   "sufficient",
+   202752
+  ],
+  "K3/admission_ledger/causal": [
+   "insufficient",
+   407392
+  ],
+  "K3/admission_ledger/order": [
+   "insufficient",
+   70799
+  ],
+  "K3/full_mediator_log/admission": [
+   "sufficient",
+   1104
+  ],
+  "K3/full_mediator_log/causal": [
+   "insufficient",
+   1928
+  ],
+  "K3/full_mediator_log/order": [
+   "sufficient",
+   1007
+  ],
+  "K3/receipts/admission": [
+   "insufficient",
+   8497
+  ],
+  "K3/receipts/causal": [
+   "insufficient",
+   14195
+  ],
+  "K3/receipts/order": [
+   "sufficient",
+   37493
+  ],
+  "K3/receipts_plus_admission_ledger/admission": [
+   "sufficient",
+   12336
+  ],
+  "K3/receipts_plus_admission_ledger/causal": [
+   "insufficient",
+   13264
+  ],
+  "K3/receipts_plus_admission_ledger/order": [
+   "sufficient",
+   14309
+  ]
+ }
+}

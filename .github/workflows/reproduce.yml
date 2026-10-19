@@ -1,0 +1,26 @@
+name: finite and workflow reproduction with stub model control
+on:
+  workflow_dispatch:
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - run: python -m pip install -e '.[dev]'
+      - run: curl --fail --location --output /tmp/tla2tools.jar https://github.com/tlaplus/tlaplus/releases/download/v1.8.0/tla2tools.jar
+      - run: python -c "import hashlib; assert hashlib.sha256(open('/tmp/tla2tools.jar','rb').read()).hexdigest() == '15d103b7e5617780bcc904c0af12f1ad242e2b345c0301136c5be4588f17edac'"
+      - run: TLA2TOOLS_JAR=/tmp/tla2tools.jar JAVA_TOOL_OPTIONS=-Xmx2g python experiments/run_all.py --dry-run --jobs 2
+      - uses: actions/upload-artifact@v4
+        with:
+          name: reproduction-results
+          path: |
+            results/generated
+            results/logs
+            figures/paper

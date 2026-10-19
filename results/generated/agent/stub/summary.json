@@ -1,0 +1,503 @@
+{
+  "baseline_instability_items": 0,
+  "conditions": 4,
+  "confidence_level": 0.95,
+  "counterfactual_repeats": 3,
+  "documents_max": 10,
+  "documents_min": 5,
+  "followup_max_tokens": 48,
+  "fuzzy_tolerance": 0.01,
+  "metadata": {
+    "configuration": null,
+    "experiment": "agent_revision6",
+    "git_commit": "8751aabb970bb5d6dafd3d85dfa85bf411313d76",
+    "git_dirty": true,
+    "inputs": {
+      "followup_max_tokens": 48,
+      "model": "qwen2.5:0.5b",
+      "num_ctx": 4096,
+      "provider": "stub",
+      "tasks": 200
+    },
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "seed": 610018,
+    "source_sha256": "752d8c5a0782bbbf9f192dfb2bc1a179192d4ae3745cafb88204747ec06177aa",
+    "timestamp_utc": "2026-10-18T16:02:34.508989+00:00"
+  },
+  "model": "deterministic-quote-copy-stub",
+  "num_ctx": 4096,
+  "plan_max_tokens": 64,
+  "provider": "stub",
+  "queries_per_task": 12,
+  "raw_task_logs": 200,
+  "restricted_max": 3,
+  "restricted_min": 1,
+  "rows": [
+    {
+      "audit_admission_correct": {
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "mean": 1.0,
+        "method": "Wilson",
+        "upper": 1
+      },
+      "audit_order_correct": {
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "mean": 1.0,
+        "method": "Wilson",
+        "upper": 1
+      },
+      "condition": "SourceOnly",
+      "declared_slot_bound_bits": {
+        "half_width": 3.518322153224367,
+        "lower": 110.13167784677564,
+        "mean": 113.65,
+        "method": "normal mean interval",
+        "upper": 117.16832215322437
+      },
+      "detected_sensitive_share": {
+        "half_width": 0.0,
+        "lower": 0.5,
+        "mean": 0.5,
+        "method": "normal mean interval",
+        "upper": 0.5
+      },
+      "exact_task_leak": {
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "mean": 1.0,
+        "method": "Wilson",
+        "upper": 1
+      },
+      "fuzzy_task_leak": {
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "mean": 1.0,
+        "method": "Wilson",
+        "upper": 1
+      },
+      "input_tokens": {
+        "half_width": 91.47637598383353,
+        "lower": 3281.4236240161667,
+        "mean": 3372.9,
+        "method": "normal mean interval",
+        "upper": 3464.3763759838334
+      },
+      "label_seconds": {
+        "half_width": 9.753094215735606e-05,
+        "lower": 8.471288906552085e-05,
+        "mean": 0.00018224383122287692,
+        "method": "normal mean interval",
+        "upper": 0.000279774773380233
+      },
+      "ledger_logical_bits": {
+        "half_width": 3.518322153224367,
+        "lower": 110.13167784677564,
+        "mean": 113.65,
+        "method": "normal mean interval",
+        "upper": 117.16832215322437
+      },
+      "ledger_serialized_bytes": {
+        "half_width": 21.1099329193462,
+        "lower": 1306.790067080654,
+        "mean": 1327.9,
+        "method": "normal mean interval",
+        "upper": 1349.0099329193463
+      },
+      "output_tokens": {
+        "half_width": 9.147637598383353,
+        "lower": 291.7423624016166,
+        "mean": 300.89,
+        "method": "normal mean interval",
+        "upper": 310.03763759838336
+      },
+      "provider_seconds": {
+        "half_width": 0.00011834815114857362,
+        "lower": 0.0002880713749676504,
+        "mean": 0.00040641952611622403,
+        "method": "normal mean interval",
+        "upper": 0.0005247676772647976
+      },
+      "quarantined_share": {
+        "half_width": 0.0,
+        "lower": 0.0,
+        "mean": 0.0,
+        "method": "normal mean interval",
+        "upper": 0.0
+      },
+      "quarantined_without_detected_sensitivity": {
+        "half_width": 0.0,
+        "lower": 0.0,
+        "mean": 0.0,
+        "method": "normal mean interval",
+        "upper": 0.0
+      },
+      "seconds": {
+        "half_width": 0.00023573688969986712,
+        "lower": 0.0007206545539149809,
+        "mean": 0.000956391443614848,
+        "method": "normal mean interval",
+        "upper": 0.001192128333314715
+      },
+      "utility": {
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "mean": 1.0,
+        "method": "Wilson",
+        "upper": 1
+      }
+    },
+    {
+      "audit_admission_correct": {
+        "half_width": 0.009423002959160447,
+        "lower": 0,
+        "mean": 0.0,
+        "method": "Wilson",
+        "upper": 0.018846005918320894
+      },
+      "audit_order_correct": {
+        "half_width": 0.009423002959160447,
+        "lower": 0,
+        "mean": 0.0,
+        "method": "Wilson",
+        "upper": 0.018846005918320894
+      },
+      "condition": "DeleteAll",
+      "declared_slot_bound_bits": {
+        "half_width": 3.518322153224367,
+        "lower": 110.13167784677564,
+        "mean": 113.65,
+        "method": "normal mean interval",
+        "upper": 117.16832215322437
+      },
+      "detected_sensitive_share": {
+        "half_width": 0.0,
+        "lower": 0.5,
+        "mean": 0.5,
+        "method": "normal mean interval",
+        "upper": 0.5
+      },
+      "exact_task_leak": {
+        "half_width": 0.009423002959160447,
+        "lower": 0,
+        "mean": 0.0,
+        "method": "Wilson",
+        "upper": 0.018846005918320894
+      },
+      "fuzzy_task_leak": {
+        "half_width": 0.0324014518322827,
+        "lower": 0.030985020801370097,
+        "mean": 0.055,
+        "method": "Wilson",
+        "upper": 0.0957879244659355
+      },
+      "input_tokens": {
+        "half_width": 73.18110078706682,
+        "lower": 2258.938899212933,
+        "mean": 2332.12,
+        "method": "normal mean interval",
+        "upper": 2405.301100787067
+      },
+      "label_seconds": {
+        "half_width": 9.239428239464612e-06,
+        "lower": 6.710351278953269e-05,
+        "mean": 7.63429410289973e-05,
+        "method": "normal mean interval",
+        "upper": 8.558236926846191e-05
+      },
+      "ledger_logical_bits": {
+        "half_width": 0.0,
+        "lower": 0.0,
+        "mean": 0.0,
+        "method": "normal mean interval",
+        "upper": 0.0
+      },
+      "ledger_serialized_bytes": {
+        "half_width": 0.0,
+        "lower": 0.0,
+        "mean": 0.0,
+        "method": "normal mean interval",
+        "upper": 0.0
+      },
+      "output_tokens": {
+        "half_width": 9.147637598383353,
+        "lower": 255.74236240161665,
+        "mean": 264.89,
+        "method": "normal mean interval",
+        "upper": 274.03763759838336
+      },
+      "provider_seconds": {
+        "half_width": 5.024779955052421e-05,
+        "lower": 0.00023483909808786935,
+        "mean": 0.00028508689763839356,
+        "method": "normal mean interval",
+        "upper": 0.0003353346971889178
+      },
+      "quarantined_share": {
+        "half_width": 0.0,
+        "lower": 0.0,
+        "mean": 0.0,
+        "method": "normal mean interval",
+        "upper": 0.0
+      },
+      "quarantined_without_detected_sensitivity": {
+        "half_width": 0.0,
+        "lower": 0.0,
+        "mean": 0.0,
+        "method": "normal mean interval",
+        "upper": 0.0
+      },
+      "seconds": {
+        "half_width": 0.00012000708725520343,
+        "lower": 0.0005941651981150925,
+        "mean": 0.0007141722853702959,
+        "method": "normal mean interval",
+        "upper": 0.0008341793726254992
+      },
+      "utility": {
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "mean": 1.0,
+        "method": "Wilson",
+        "upper": 1
+      }
+    },
+    {
+      "audit_admission_correct": {
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "mean": 1.0,
+        "method": "Wilson",
+        "upper": 1
+      },
+      "audit_order_correct": {
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "mean": 1.0,
+        "method": "Wilson",
+        "upper": 1
+      },
+      "condition": "CLR",
+      "declared_slot_bound_bits": {
+        "half_width": 3.518322153224367,
+        "lower": 110.13167784677564,
+        "mean": 113.65,
+        "method": "normal mean interval",
+        "upper": 117.16832215322437
+      },
+      "detected_sensitive_share": {
+        "half_width": 0.0,
+        "lower": 0.5,
+        "mean": 0.5,
+        "method": "normal mean interval",
+        "upper": 0.5
+      },
+      "exact_task_leak": {
+        "half_width": 0.009423002959160447,
+        "lower": 0,
+        "mean": 0.0,
+        "method": "Wilson",
+        "upper": 0.018846005918320894
+      },
+      "fuzzy_task_leak": {
+        "half_width": 0.0324014518322827,
+        "lower": 0.030985020801370097,
+        "mean": 0.055,
+        "method": "Wilson",
+        "upper": 0.0957879244659355
+      },
+      "input_tokens": {
+        "half_width": 73.18110078706682,
+        "lower": 2362.938899212933,
+        "mean": 2436.12,
+        "method": "normal mean interval",
+        "upper": 2509.301100787067
+      },
+      "label_seconds": {
+        "half_width": 4.5524473830518075e-05,
+        "lower": 4.8697744055026445e-05,
+        "mean": 9.422221788554452e-05,
+        "method": "normal mean interval",
+        "upper": 0.0001397466917160626
+      },
+      "ledger_logical_bits": {
+        "half_width": 3.518322153224367,
+        "lower": 110.13167784677564,
+        "mean": 113.65,
+        "method": "normal mean interval",
+        "upper": 117.16832215322437
+      },
+      "ledger_serialized_bytes": {
+        "half_width": 21.1099329193462,
+        "lower": 1228.790067080654,
+        "mean": 1249.9,
+        "method": "normal mean interval",
+        "upper": 1271.0099329193463
+      },
+      "output_tokens": {
+        "half_width": 9.147637598383353,
+        "lower": 255.74236240161665,
+        "mean": 264.89,
+        "method": "normal mean interval",
+        "upper": 274.03763759838336
+      },
+      "provider_seconds": {
+        "half_width": 1.655354593026734e-05,
+        "lower": 0.0002500350532579859,
+        "mean": 0.00026658859918825327,
+        "method": "normal mean interval",
+        "upper": 0.0002831421451185206
+      },
+      "quarantined_share": {
+        "half_width": 0.0,
+        "lower": 1.0,
+        "mean": 1.0,
+        "method": "normal mean interval",
+        "upper": 1.0
+      },
+      "quarantined_without_detected_sensitivity": {
+        "half_width": 0.0,
+        "lower": 0.5,
+        "mean": 0.5,
+        "method": "normal mean interval",
+        "upper": 0.5
+      },
+      "seconds": {
+        "half_width": 0.00012094312549346852,
+        "lower": 0.0006105183033108545,
+        "mean": 0.0007314614288043231,
+        "method": "normal mean interval",
+        "upper": 0.0008524045542977917
+      },
+      "utility": {
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "mean": 1.0,
+        "method": "Wilson",
+        "upper": 1
+      }
+    },
+    {
+      "audit_admission_correct": {
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "mean": 1.0,
+        "method": "Wilson",
+        "upper": 1
+      },
+      "audit_order_correct": {
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "mean": 1.0,
+        "method": "Wilson",
+        "upper": 1
+      },
+      "condition": "CLR+Reconstruct",
+      "declared_slot_bound_bits": {
+        "half_width": 3.9874317736542824,
+        "lower": 124.68256822634571,
+        "mean": 128.67,
+        "method": "normal mean interval",
+        "upper": 132.65743177365428
+      },
+      "detected_sensitive_share": {
+        "half_width": 0.0,
+        "lower": 0.5,
+        "mean": 0.5,
+        "method": "normal mean interval",
+        "upper": 0.5
+      },
+      "exact_task_leak": {
+        "half_width": 0.009423002959160447,
+        "lower": 0,
+        "mean": 0.0,
+        "method": "Wilson",
+        "upper": 0.018846005918320894
+      },
+      "fuzzy_task_leak": {
+        "half_width": 0.0324014518322827,
+        "lower": 0.030985020801370097,
+        "mean": 0.055,
+        "method": "Wilson",
+        "upper": 0.0957879244659355
+      },
+      "input_tokens": {
+        "half_width": 94.52558851662799,
+        "lower": 3068.004411483372,
+        "mean": 3162.53,
+        "method": "normal mean interval",
+        "upper": 3257.055588516628
+      },
+      "label_seconds": {
+        "half_width": 0.0003790201458243964,
+        "lower": -6.104996098227182e-05,
+        "mean": 0.00031797018484212456,
+        "method": "normal mean interval",
+        "upper": 0.0006969903306665209
+      },
+      "ledger_logical_bits": {
+        "half_width": 3.9874317736542824,
+        "lower": 124.68256822634571,
+        "mean": 128.67,
+        "method": "normal mean interval",
+        "upper": 132.65743177365428
+      },
+      "ledger_serialized_bytes": {
+        "half_width": 23.924590641925697,
+        "lower": 1397.0954093580742,
+        "mean": 1421.02,
+        "method": "normal mean interval",
+        "upper": 1444.9445906419257
+      },
+      "output_tokens": {
+        "half_width": 9.85130202902823,
+        "lower": 278.5686979709718,
+        "mean": 288.42,
+        "method": "normal mean interval",
+        "upper": 298.2713020290282
+      },
+      "provider_seconds": {
+        "half_width": 1.7419554074978654e-05,
+        "lower": 0.0003084067218732236,
+        "mean": 0.00032582627594820226,
+        "method": "normal mean interval",
+        "upper": 0.00034324583002318094
+      },
+      "quarantined_share": {
+        "half_width": 0.0,
+        "lower": 1.0,
+        "mean": 1.0,
+        "method": "normal mean interval",
+        "upper": 1.0
+      },
+      "quarantined_without_detected_sensitivity": {
+        "half_width": 0.0,
+        "lower": 0.5,
+        "mean": 0.5,
+        "method": "normal mean interval",
+        "upper": 0.5
+      },
+      "seconds": {
+        "half_width": 0.0004215011870585328,
+        "lower": 0.0007284239832622517,
+        "mean": 0.0011499251703207846,
+        "method": "normal mean interval",
+        "upper": 0.0015714263573793174
+      },
+      "utility": {
+        "half_width": 0.009423002959160447,
+        "lower": 0.9811539940816791,
+        "mean": 1.0,
+        "method": "Wilson",
+        "upper": 1
+      }
+    }
+  ],
+  "seed": 610018,
+  "summary_max_tokens": 160,
+  "tasks": 200,
+  "temperature": 0,
+  "templates": 3
+}

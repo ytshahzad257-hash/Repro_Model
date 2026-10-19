@@ -1,0 +1,100 @@
+case_id,configuration,sources,secrets,revocation,revoked,left,right,state_count_s0,state_count_s1,transitions_s0,transitions_s1,information_safety,authorization_safety,review_failures,product_states,product_transitions,synchronous_observations,payload_only,equal_release_product_states,equal_release_product_transitions,equal_release_observations,explorer_seconds_single_both_secrets,explorer_seconds_product_both_comparisons
+Governed/K1,Governed,1,shared,all,[0],0,1,439,439,1082,1082,holds,holds,0,439,1082,equal,equal,439,1082,equal,0.0246,0.0615
+SourceOnly/K1,SourceOnly,1,shared,all,[0],0,1,570,570,1470,1470,violated,holds,0,570,1470,differ,differ,570,1470,differ,0.032,0.0896
+IgnoreInfoChecks/K1,IgnoreInfoChecks,1,shared,all,[0],0,1,1000,1000,3034,3034,violated,holds,0,1000,3034,differ,differ,1000,3034,differ,0.0736,0.2206
+UnguardedExport/K1,UnguardedExport,1,shared,all,[0],0,1,379,379,822,822,violated,holds,0,379,822,differ,differ,379,822,differ,0.0259,0.0757
+DeleteEvidence/K1,DeleteEvidence,1,shared,all,[0],0,1,299,299,652,652,holds,holds,520,299,652,equal,equal,299,652,equal,0.0244,0.0562
+IgnoreGrantChecks/K1,IgnoreGrantChecks,1,shared,all,[0],0,1,519,519,1292,1292,holds,violated,0,519,1292,equal,equal,519,1292,equal,0.0409,0.0996
+TimedRelease/K1,TimedRelease,1,shared,all,[0],0,1,439,559,1082,1442,holds,holds,0,559,1442,differ,equal,559,1442,differ,0.0406,0.1019
+ApprovedSecretRelease/K1,ApprovedSecretRelease,1,shared,all,[0],0,1,439,439,1082,1082,holds,holds,0,439,1082,differ,differ,878,2164,equal,0.0344,0.1144
+RefusalMutation/K1,RefusalMutation,1,shared,all,[0],0,1,439,279,1082,662,holds,holds,0,279,662,differ,equal,279,662,differ,0.0279,0.0529
+Governed/K2,Governed,2,shared,all,"[0, 1]",0,1,1697,1697,4250,4250,holds,holds,0,1697,4250,equal,equal,1697,4250,equal,0.1535,0.358
+SourceOnly/K2,SourceOnly,2,shared,all,"[0, 1]",0,1,2946,2946,7796,7796,violated,holds,0,2946,7796,differ,differ,2946,7796,differ,0.2519,0.5828
+IgnoreInfoChecks/K2,IgnoreInfoChecks,2,shared,all,"[0, 1]",0,1,5960,5960,22763,22763,violated,holds,0,5960,22763,differ,differ,5960,22763,differ,0.6348,1.5729
+UnguardedExport/K2,UnguardedExport,2,shared,all,"[0, 1]",0,1,1469,1469,3262,3262,violated,holds,0,1469,3262,differ,differ,1469,3262,differ,0.1077,0.231
+DeleteEvidence/K2,DeleteEvidence,2,shared,all,"[0, 1]",0,1,1165,1165,2616,2616,holds,holds,1976,1165,2616,equal,equal,1165,2616,equal,0.0703,0.1879
+IgnoreGrantChecks/K2,IgnoreGrantChecks,2,shared,all,"[0, 1]",0,1,2001,2001,5048,5048,holds,violated,0,2001,5048,equal,equal,2001,5048,equal,0.1487,0.3768
+TimedRelease/K2,TimedRelease,2,shared,all,"[0, 1]",0,1,1697,2153,4250,5618,holds,holds,0,2153,5618,differ,equal,2153,5618,differ,0.1442,0.4078
+ApprovedSecretRelease/K2,ApprovedSecretRelease,2,shared,all,"[0, 1]",0,1,1697,1697,4250,4250,holds,holds,0,1697,4250,differ,differ,3394,8500,equal,0.1224,0.3988
+RefusalMutation/K2,RefusalMutation,2,shared,all,"[0, 1]",0,1,1697,1089,4250,2654,holds,holds,0,1089,2654,differ,equal,1089,2654,differ,0.0993,0.1865
+Governed/K3,Governed,3,shared,all,"[0, 1, 2]",0,1,5947,5947,15286,15286,holds,holds,0,5947,15286,equal,equal,5947,15286,equal,0.4716,1.0639
+SourceOnly/K3,SourceOnly,3,shared,all,"[0, 1, 2]",0,1,13782,13782,37112,37112,violated,holds,0,13782,37112,differ,differ,13782,37112,differ,1.0527,2.4589
+IgnoreInfoChecks/K3,IgnoreInfoChecks,3,shared,all,"[0, 1, 2]",0,1,30736,30736,141837,141837,violated,holds,0,30736,141837,differ,differ,30736,141837,differ,3.7995,9.2894
+UnguardedExport/K3,UnguardedExport,3,shared,all,"[0, 1, 2]",0,1,5167,5167,11906,11906,violated,holds,0,5167,11906,differ,differ,5167,11906,differ,0.3798,0.8836
+DeleteEvidence/K3,DeleteEvidence,3,shared,all,"[0, 1, 2]",0,1,4127,4127,9696,9696,holds,holds,6760,4127,9696,equal,equal,4127,9696,equal,0.2726,0.7059
+IgnoreGrantChecks/K3,IgnoreGrantChecks,3,shared,all,"[0, 1, 2]",0,1,6987,6987,18016,18016,holds,violated,0,6987,18016,equal,equal,6987,18016,equal,0.5367,1.2487
+TimedRelease/K3,TimedRelease,3,shared,all,"[0, 1, 2]",0,1,5947,7507,15286,19966,holds,holds,0,7507,19966,differ,equal,7507,19966,differ,0.4951,1.3339
+ApprovedSecretRelease/K3,ApprovedSecretRelease,3,shared,all,"[0, 1, 2]",0,1,5947,5947,15286,15286,holds,holds,0,5947,15286,differ,differ,11894,30572,equal,0.4783,1.5815
+RefusalMutation/K3,RefusalMutation,3,shared,all,"[0, 1, 2]",0,1,5947,3867,15286,9826,holds,holds,0,3867,9826,differ,equal,3867,9826,differ,0.4099,0.7998
+Governed/K4,Governed,4,shared,all,"[0, 1, 2, 3]",0,1,19937,19937,53342,53342,holds,holds,0,19937,53342,equal,equal,19937,53342,equal,1.875,4.3553
+SourceOnly/K4,SourceOnly,4,shared,all,"[0, 1, 2, 3]",0,1,61122,61122,166892,166892,violated,holds,0,61122,166892,differ,differ,61122,166892,differ,5.4596,13.2221
+IgnoreInfoChecks/K4,IgnoreInfoChecks,4,shared,all,"[0, 1, 2, 3]",0,1,150704,150704,815031,815031,violated,holds,0,150704,815031,differ,differ,150704,815031,differ,35.5758,107.2725
+UnguardedExport/K4,UnguardedExport,4,shared,all,"[0, 1, 2, 3]",0,1,17405,17405,42370,42370,violated,holds,0,17405,42370,differ,differ,17405,42370,differ,2.5163,6.1595
+DeleteEvidence/K4,DeleteEvidence,4,shared,all,"[0, 1, 2, 3]",0,1,14029,14029,35196,35196,holds,holds,21944,14029,35196,equal,equal,14029,35196,equal,1.8313,4.2459
+IgnoreGrantChecks/K4,IgnoreGrantChecks,4,shared,all,"[0, 1, 2, 3]",0,1,23313,23313,62204,62204,holds,violated,0,23313,62204,equal,equal,23313,62204,equal,3.3349,7.4374
+TimedRelease/K4,TimedRelease,4,shared,all,"[0, 1, 2, 3]",0,1,19937,25001,53342,68534,holds,holds,0,25001,68534,differ,equal,25001,68534,differ,3.2446,7.8895
+ApprovedSecretRelease/K4,ApprovedSecretRelease,4,shared,all,"[0, 1, 2, 3]",0,1,19937,19937,53342,53342,holds,holds,0,19937,53342,differ,differ,39874,106684,equal,2.8865,8.5414
+RefusalMutation/K4,RefusalMutation,4,shared,all,"[0, 1, 2, 3]",0,1,19937,13185,53342,35618,holds,holds,0,13185,35618,differ,equal,13185,35618,differ,2.159,4.5903
+Governed/K1/independent/one,Governed,1,independent,one,[0],0,1,439,439,1082,1082,holds,holds,0,439,1082,equal,equal,439,1082,equal,0.0493,0.1121
+SourceOnly/K1/independent/one,SourceOnly,1,independent,one,[0],0,1,570,570,1470,1470,violated,holds,0,570,1470,differ,differ,570,1470,differ,0.0569,0.1321
+IgnoreInfoChecks/K1/independent/one,IgnoreInfoChecks,1,independent,one,[0],0,1,1000,1000,3034,3034,violated,holds,0,1000,3034,differ,differ,1000,3034,differ,0.1865,0.2825
+UnguardedExport/K1/independent/one,UnguardedExport,1,independent,one,[0],0,1,379,379,822,822,violated,holds,0,379,822,differ,differ,379,822,differ,0.0282,0.0634
+DeleteEvidence/K1/independent/one,DeleteEvidence,1,independent,one,[0],0,1,299,299,652,652,holds,holds,520,299,652,equal,equal,299,652,equal,0.0194,0.05
+IgnoreGrantChecks/K1/independent/one,IgnoreGrantChecks,1,independent,one,[0],0,1,519,519,1292,1292,holds,violated,0,519,1292,equal,equal,519,1292,equal,0.0395,0.1096
+TimedRelease/K1/independent/one,TimedRelease,1,independent,one,[0],0,1,439,559,1082,1442,holds,holds,0,559,1442,differ,equal,559,1442,differ,0.0406,0.1263
+ApprovedSecretRelease/K1/independent/one,ApprovedSecretRelease,1,independent,one,[0],0,1,439,439,1082,1082,holds,holds,0,439,1082,differ,differ,878,2164,equal,0.0393,0.1147
+RefusalMutation/K1/independent/one,RefusalMutation,1,independent,one,[0],0,1,439,279,1082,662,holds,holds,0,279,662,differ,equal,279,662,differ,0.0331,0.0663
+Governed/K1/independent/all,Governed,1,independent,all,[0],0,1,439,439,1082,1082,holds,holds,0,439,1082,equal,equal,439,1082,equal,0.0551,0.1792
+SourceOnly/K1/independent/all,SourceOnly,1,independent,all,[0],0,1,570,570,1470,1470,violated,holds,0,570,1470,differ,differ,570,1470,differ,0.0876,0.1547
+IgnoreInfoChecks/K1/independent/all,IgnoreInfoChecks,1,independent,all,[0],0,1,1000,1000,3034,3034,violated,holds,0,1000,3034,differ,differ,1000,3034,differ,0.1145,0.2777
+UnguardedExport/K1/independent/all,UnguardedExport,1,independent,all,[0],0,1,379,379,822,822,violated,holds,0,379,822,differ,differ,379,822,differ,0.0293,0.0655
+DeleteEvidence/K1/independent/all,DeleteEvidence,1,independent,all,[0],0,1,299,299,652,652,holds,holds,520,299,652,equal,equal,299,652,equal,0.0198,0.0535
+IgnoreGrantChecks/K1/independent/all,IgnoreGrantChecks,1,independent,all,[0],0,1,519,519,1292,1292,holds,violated,0,519,1292,equal,equal,519,1292,equal,0.0423,0.1013
+TimedRelease/K1/independent/all,TimedRelease,1,independent,all,[0],0,1,439,559,1082,1442,holds,holds,0,559,1442,differ,equal,559,1442,differ,0.0485,0.1489
+ApprovedSecretRelease/K1/independent/all,ApprovedSecretRelease,1,independent,all,[0],0,1,439,439,1082,1082,holds,holds,0,439,1082,differ,differ,878,2164,equal,0.0423,0.1295
+RefusalMutation/K1/independent/all,RefusalMutation,1,independent,all,[0],0,1,439,279,1082,662,holds,holds,0,279,662,differ,equal,279,662,differ,0.029,0.0589
+Governed/K2/independent/one,Governed,2,independent,one,[0],2,3,2688,2688,8490,8490,holds,holds,0,2688,8490,equal,equal,2688,8490,equal,0.322,0.7518
+SourceOnly/K2/independent/one,SourceOnly,2,independent,one,[0],2,3,3522,3522,11318,11318,violated,holds,0,3522,11318,differ,differ,3522,11318,differ,0.839,1.0888
+IgnoreInfoChecks/K2/independent/one,IgnoreInfoChecks,2,independent,one,[0],2,3,5460,5460,20789,20789,violated,holds,0,5460,20789,differ,differ,5460,20789,differ,0.8682,2.1835
+UnguardedExport/K2/independent/one,UnguardedExport,2,independent,one,[0],2,3,2400,2400,6864,6864,violated,holds,0,2400,6864,differ,differ,2400,6864,differ,0.249,0.7379
+DeleteEvidence/K2/independent/one,DeleteEvidence,2,independent,one,[0],2,3,1836,1836,5304,5304,holds,holds,3288,1836,5304,equal,equal,1836,5304,equal,0.1614,0.4639
+IgnoreGrantChecks/K2/independent/one,IgnoreGrantChecks,2,independent,one,[0],2,3,3252,3252,10386,10386,holds,violated,0,3252,10386,equal,equal,3252,10386,equal,0.3663,1.3527
+TimedRelease/K2/independent/one,TimedRelease,2,independent,one,[0],2,3,2688,3480,8490,11406,holds,holds,0,3480,11406,differ,equal,3480,11406,differ,0.3279,1.0692
+ApprovedSecretRelease/K2/independent/one,ApprovedSecretRelease,2,independent,one,[0],2,3,2688,2688,8490,8490,holds,holds,0,2688,8490,differ,differ,5376,16980,equal,0.3496,1.0352
+RefusalMutation/K2/independent/one,RefusalMutation,2,independent,one,[0],2,3,2688,1560,8490,4698,holds,holds,0,1560,4698,differ,equal,1560,4698,differ,0.3097,0.5519
+Governed/K2/independent/all,Governed,2,independent,all,"[0, 1]",2,1,1697,1697,4250,4250,holds,holds,0,1697,4250,equal,equal,1697,4250,equal,0.1503,0.3503
+SourceOnly/K2/independent/all,SourceOnly,2,independent,all,"[0, 1]",2,1,2946,2946,7796,7796,violated,holds,0,2946,7796,differ,differ,2946,7796,differ,0.2738,0.7393
+IgnoreInfoChecks/K2/independent/all,IgnoreInfoChecks,2,independent,all,"[0, 1]",2,1,5960,5960,22763,22763,violated,holds,0,5960,22763,differ,differ,5960,22763,differ,0.9409,5.3457
+UnguardedExport/K2/independent/all,UnguardedExport,2,independent,all,"[0, 1]",2,1,1469,1469,3262,3262,violated,holds,0,1469,3262,differ,differ,1469,3262,differ,0.3702,0.4243
+DeleteEvidence/K2/independent/all,DeleteEvidence,2,independent,all,"[0, 1]",2,1,1165,1165,2616,2616,holds,holds,1976,1165,2616,equal,equal,1165,2616,equal,0.183,0.3386
+IgnoreGrantChecks/K2/independent/all,IgnoreGrantChecks,2,independent,all,"[0, 1]",2,1,2001,2001,5048,5048,holds,violated,0,2001,5048,equal,equal,2001,5048,equal,0.2409,0.9486
+TimedRelease/K2/independent/all,TimedRelease,2,independent,all,"[0, 1]",2,1,1697,2153,4250,5618,holds,holds,0,2153,5618,differ,equal,2153,5618,differ,0.2588,0.6333
+ApprovedSecretRelease/K2/independent/all,ApprovedSecretRelease,2,independent,all,"[0, 1]",2,1,1697,1697,4250,4250,holds,holds,0,1697,4250,differ,differ,3394,8500,equal,0.2044,0.6439
+RefusalMutation/K2/independent/all,RefusalMutation,2,independent,all,"[0, 1]",2,1,1697,1089,4250,2654,holds,holds,0,1089,2654,differ,equal,1089,2654,differ,0.1637,0.2788
+Governed/K3/independent/one,Governed,3,independent,one,[0],2,3,14412,14412,56595,56595,holds,holds,0,14412,56595,equal,equal,14412,56595,equal,2.8488,6.6566
+SourceOnly/K3/independent/one,SourceOnly,3,independent,one,[0],2,3,18966,18966,75068,75068,violated,holds,0,18966,75068,differ,differ,18966,75068,differ,3.6651,8.2011
+IgnoreInfoChecks/K3/independent/one,IgnoreInfoChecks,3,independent,one,[0],2,3,27948,27948,128579,128579,violated,holds,0,27948,128579,differ,differ,27948,128579,differ,7.0502,14.5521
+UnguardedExport/K3/independent/one,UnguardedExport,3,independent,one,[0],2,3,13044,13044,47361,47361,violated,holds,0,13044,47361,differ,differ,13044,47361,differ,2.4369,5.9586
+DeleteEvidence/K3/independent/one,DeleteEvidence,3,independent,one,[0],2,3,9840,9840,36057,36057,holds,holds,17928,9840,36057,equal,equal,9840,36057,equal,2.04,5.1645
+IgnoreGrantChecks/K3/independent/one,IgnoreGrantChecks,3,independent,one,[0],2,3,17616,17616,69915,69915,holds,violated,0,17616,69915,equal,equal,17616,69915,equal,3.7165,10.2538
+TimedRelease/K3/independent/one,TimedRelease,3,independent,one,[0],2,3,14412,18804,56595,76143,holds,holds,0,18804,76143,differ,equal,18804,76143,differ,3.6152,10.425
+ApprovedSecretRelease/K3/independent/one,ApprovedSecretRelease,3,independent,one,[0],2,3,14412,14412,56595,56595,holds,holds,0,14412,56595,differ,differ,28824,113190,equal,3.0713,10.403
+RefusalMutation/K3/independent/one,RefusalMutation,3,independent,one,[0],2,3,14412,8004,56595,29955,holds,holds,0,8004,29955,differ,equal,8004,29955,differ,2.5589,3.7093
+Governed/K3/independent/all,Governed,3,independent,all,"[0, 1, 2]",2,5,5947,5947,15286,15286,holds,holds,0,5947,15286,equal,equal,5947,15286,equal,0.66,2.1441
+SourceOnly/K3/independent/all,SourceOnly,3,independent,all,"[0, 1, 2]",2,5,13782,13782,37112,37112,violated,holds,0,13782,37112,differ,differ,13782,37112,differ,2.0543,4.6023
+IgnoreInfoChecks/K3/independent/all,IgnoreInfoChecks,3,independent,all,"[0, 1, 2]",2,5,30736,30736,141837,141837,violated,holds,0,30736,141837,differ,differ,30736,141837,differ,7.9481,17.4695
+UnguardedExport/K3/independent/all,UnguardedExport,3,independent,all,"[0, 1, 2]",2,5,5167,5167,11906,11906,violated,holds,0,5167,11906,differ,differ,5167,11906,differ,0.7884,1.8803
+DeleteEvidence/K3/independent/all,DeleteEvidence,3,independent,all,"[0, 1, 2]",2,5,4127,4127,9696,9696,holds,holds,6760,4127,9696,equal,equal,4127,9696,equal,0.35,1.1218
+IgnoreGrantChecks/K3/independent/all,IgnoreGrantChecks,3,independent,all,"[0, 1, 2]",2,5,6987,6987,18016,18016,holds,violated,0,6987,18016,equal,equal,6987,18016,equal,0.9467,2.184
+TimedRelease/K3/independent/all,TimedRelease,3,independent,all,"[0, 1, 2]",2,5,5947,7507,15286,19966,holds,holds,0,7507,19966,differ,equal,7507,19966,differ,0.9201,2.2314
+ApprovedSecretRelease/K3/independent/all,ApprovedSecretRelease,3,independent,all,"[0, 1, 2]",2,5,5947,5947,15286,15286,holds,holds,0,5947,15286,differ,differ,11894,30572,equal,1.1405,2.4023
+RefusalMutation/K3/independent/all,RefusalMutation,3,independent,all,"[0, 1, 2]",2,5,5947,3867,15286,9826,holds,holds,0,3867,9826,differ,equal,3867,9826,differ,0.5899,1.6078
+Governed/K5,Governed,5,shared,all,"[0, 1, 2, 3, 4]",0,1,65539,65539,185782,185782,holds,holds,0,65539,185782,equal,equal,65539,185782,equal,14.0592,34.0704
+SourceOnly/K5,SourceOnly,5,shared,all,"[0, 1, 2, 3, 4]",0,1,262470,262470,725360,725360,violated,holds,0,262470,725360,differ,differ,262470,725360,differ,51.4352,110.1051
+IgnoreInfoChecks/K5,IgnoreInfoChecks,5,shared,all,"[0, 1, 2, 3, 4]",0,1,725440,725440,4497149,4497149,violated,holds,0,725440,4497149,differ,differ,725440,4497149,differ,257.4141,543.8634
+UnguardedExport/K5,UnguardedExport,5,shared,all,"[0, 1, 2, 3, 4]",0,1,57559,57559,151202,151202,violated,holds,0,57559,151202,differ,differ,57559,151202,differ,7.897,18.6276
+DeleteEvidence/K5,DeleteEvidence,5,shared,all,"[0, 1, 2, 3, 4]",0,1,46919,46919,128592,128592,holds,holds,69160,46919,128592,equal,equal,46919,128592,equal,6.258,15.7975
+IgnoreGrantChecks/K5,IgnoreGrantChecks,5,shared,all,"[0, 1, 2, 3, 4]",0,1,76179,76179,213712,213712,holds,violated,0,76179,213712,equal,equal,76179,213712,equal,13.3752,28.0727
+TimedRelease/K5,TimedRelease,5,shared,all,"[0, 1, 2, 3, 4]",0,1,65539,81499,185782,233662,holds,holds,0,81499,233662,differ,equal,81499,233662,differ,12.6683,30.957
+ApprovedSecretRelease/K5,ApprovedSecretRelease,5,shared,all,"[0, 1, 2, 3, 4]",0,1,65539,65539,185782,185782,holds,holds,0,65539,185782,differ,differ,131078,371564,equal,10.8964,31.909
+RefusalMutation/K5,RefusalMutation,5,shared,all,"[0, 1, 2, 3, 4]",0,1,65539,44259,185782,129922,holds,holds,0,44259,129922,differ,equal,44259,129922,differ,9.0278,17.9257
